@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-14T17:47:54.429755",
-  "total": 432,
+  "updated_at": "2026-06-14T19:01:48.035058",
+  "total": 430,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -17,7 +17,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -33,7 +34,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -45,11 +47,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "239.83",
+        "price": "239.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -65,7 +68,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -81,7 +85,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -93,11 +98,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13963.78",
+        "price": "13963.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -113,7 +119,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -129,7 +136,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -145,7 +153,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -157,11 +166,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "239.83",
+        "price": "239.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -177,7 +187,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -193,7 +204,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (V)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -205,11 +217,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13963.78",
+        "price": "13963.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -225,7 +238,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -241,7 +255,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -257,7 +272,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -273,7 +289,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -285,11 +302,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "255.84",
+        "price": "255.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -305,7 +323,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -321,7 +340,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -337,7 +357,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -349,11 +370,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "15691.83",
+        "price": "15691.89",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -369,23 +391,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
-      },
-      {
-        "route": "Istanbul - Baghdad",
-        "search_date": "17.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA216",
-        "from_code": "IST",
-        "departure_time": "11:00",
-        "to_code": "BGW",
-        "arrival_time": "14:00",
-        "duration": "",
-        "price": "389.93",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -401,7 +408,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -413,11 +421,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "223.83",
+        "price": "223.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -433,7 +442,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -445,11 +455,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13223.34",
+        "price": "13223.4",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -465,7 +476,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -481,7 +493,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -497,7 +510,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -513,7 +527,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -525,11 +540,12 @@
         "to_code": "BGW",
         "arrival_time": "09:20",
         "duration": "",
-        "price": "416.7",
+        "price": "416.45",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -545,7 +561,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -561,7 +578,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -577,7 +595,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -589,11 +608,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "223.83",
+        "price": "223.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -609,7 +629,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -621,11 +642,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13223.34",
+        "price": "13223.4",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -641,7 +663,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -657,7 +680,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -673,7 +697,25 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Istanbul - Baghdad",
+        "search_date": "19.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK842",
+        "from_code": "IST",
+        "departure_time": "06:30",
+        "to_code": "BGW",
+        "arrival_time": "09:20",
+        "duration": "",
+        "price": "384.48",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -689,23 +731,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (K)",
-        "fare_type": "Basic"
-      },
-      {
-        "route": "Istanbul - Baghdad",
-        "search_date": "19.06.2026",
-        "airline": "Turkish Airlines",
-        "flight_number": "TK842",
-        "from_code": "IST",
-        "departure_time": "06:30",
-        "to_code": "BGW",
-        "arrival_time": "09:20",
-        "duration": "",
-        "price": "384.71",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -721,7 +748,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -733,11 +761,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "223.83",
+        "price": "223.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -753,7 +782,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -765,11 +795,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13223.34",
+        "price": "13223.4",
         "currency": "USD",
         "seats_available": "4",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -785,7 +816,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -797,11 +829,12 @@
         "to_code": "BGW",
         "arrival_time": "09:20",
         "duration": "",
-        "price": "406.16",
+        "price": "374.06",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -813,11 +846,12 @@
         "to_code": "BGW",
         "arrival_time": "09:20",
         "duration": "",
-        "price": "406.17",
+        "price": "374.07",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -829,11 +863,12 @@
         "to_code": "BGW",
         "arrival_time": "09:20",
         "duration": "",
-        "price": "411.36",
+        "price": "379.14",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -849,7 +884,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -865,7 +901,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -877,27 +914,12 @@
         "to_code": "BGW",
         "arrival_time": "04:20",
         "duration": "",
-        "price": "416.7",
+        "price": "416.45",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
-      },
-      {
-        "route": "Istanbul - Baghdad",
-        "search_date": "20.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA216",
-        "from_code": "IST",
-        "departure_time": "11:00",
-        "to_code": "BGW",
-        "arrival_time": "14:00",
-        "duration": "",
-        "price": "389.93",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -913,7 +935,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -925,11 +948,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "239.83",
+        "price": "239.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -945,7 +969,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -957,11 +982,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13963.78",
+        "price": "13963.84",
         "currency": "USD",
         "seats_available": "7",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -977,7 +1003,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -993,7 +1020,59 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Istanbul - Baghdad",
+        "search_date": "21.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK842",
+        "from_code": "IST",
+        "departure_time": "06:30",
+        "to_code": "BGW",
+        "arrival_time": "09:20",
+        "duration": "",
+        "price": "374.07",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Istanbul - Baghdad",
+        "search_date": "21.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK842",
+        "from_code": "IST",
+        "departure_time": "06:30",
+        "to_code": "BGW",
+        "arrival_time": "09:20",
+        "duration": "",
+        "price": "379.14",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Istanbul - Baghdad",
+        "search_date": "21.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA216",
+        "from_code": "IST",
+        "departure_time": "11:00",
+        "to_code": "BGW",
+        "arrival_time": "14:00",
+        "duration": "",
+        "price": "389.93",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1009,7 +1088,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1021,11 +1101,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "255.84",
+        "price": "255.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1041,7 +1122,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1057,7 +1139,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1073,7 +1156,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1085,11 +1169,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "239.83",
+        "price": "239.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1105,7 +1190,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1121,7 +1207,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1133,11 +1220,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "223.83",
+        "price": "223.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1153,7 +1241,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Baghdad",
@@ -1165,27 +1254,12 @@
         "to_code": "BGW",
         "arrival_time": "02:15",
         "duration": "",
-        "price": "13223.34",
+        "price": "13223.4",
         "currency": "USD",
-        "seats_available": "6",
+        "seats_available": "5",
         "class": "Economy (O)",
-        "fare_type": ""
-      },
-      {
-        "route": "Istanbul - Baghdad",
-        "search_date": "24.06.2026",
-        "airline": "UR Airlines",
-        "flight_number": "UD162",
-        "from_code": "IST",
-        "departure_time": "12:00",
-        "to_code": "BGW",
-        "arrival_time": "15:00",
-        "duration": "",
-        "price": "275.91",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       }
     ],
     "Istanbul - Erbil": [
@@ -1203,7 +1277,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1215,11 +1290,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "300.65",
+        "price": "300.47",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1231,11 +1307,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "14309.39",
+        "price": "14309.45",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1251,7 +1328,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1267,7 +1345,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1283,7 +1362,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1295,11 +1375,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "368.7",
+        "price": "368.49",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1315,7 +1396,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1331,7 +1413,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1347,7 +1430,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1359,11 +1443,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "518.07",
+        "price": "517.76",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1379,7 +1464,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1395,7 +1481,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1411,7 +1498,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1423,11 +1511,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "364.67",
+        "price": "364.45",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1439,11 +1528,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "368.7",
+        "price": "368.49",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1455,11 +1545,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "17272.22",
+        "price": "17272.28",
         "currency": "USD",
         "seats_available": "4",
         "class": "Economy (B)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1475,7 +1566,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1491,7 +1583,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1503,11 +1596,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "273.97",
+        "price": "273.81",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1519,11 +1613,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "13074.61",
+        "price": "13074.67",
         "currency": "USD",
-        "seats_available": "3",
+        "seats_available": "4",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1539,7 +1634,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1555,7 +1651,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1571,7 +1668,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1583,11 +1681,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1603,7 +1702,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1619,7 +1719,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1631,11 +1732,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "411.38",
+        "price": "411.14",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1651,7 +1753,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1663,11 +1766,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "263.31",
+        "price": "263.16",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1679,11 +1783,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "12581.34",
+        "price": "12581.4",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1699,7 +1804,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1715,7 +1821,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1731,7 +1838,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1743,11 +1851,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1763,7 +1872,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1779,7 +1889,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1791,11 +1902,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "411.38",
+        "price": "411.14",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1811,7 +1923,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1823,11 +1936,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "273.97",
+        "price": "273.81",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1839,11 +1953,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "13074.61",
+        "price": "13074.67",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1859,7 +1974,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1875,7 +1991,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1891,7 +2008,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1903,11 +2021,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1923,7 +2042,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1939,7 +2059,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1955,7 +2076,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -1971,7 +2093,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1983,11 +2106,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "300.65",
+        "price": "300.47",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -1999,11 +2123,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "14309.39",
+        "price": "14309.45",
         "currency": "USD",
-        "seats_available": "7",
+        "seats_available": "6",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2019,7 +2144,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2035,7 +2161,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2051,7 +2178,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2063,11 +2191,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2083,7 +2212,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2099,7 +2229,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2111,11 +2242,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "582.09",
+        "price": "581.75",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2131,7 +2263,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2143,11 +2276,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "263.31",
+        "price": "263.16",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2159,11 +2293,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "12581.34",
+        "price": "12581.4",
         "currency": "USD",
         "seats_available": "4",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2179,7 +2314,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2195,7 +2331,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2211,7 +2348,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2223,11 +2361,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2243,7 +2382,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2259,7 +2399,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2271,11 +2412,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "368.7",
+        "price": "368.49",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2291,7 +2433,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2303,11 +2446,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "231.3",
+        "price": "231.16",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2323,7 +2467,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2335,11 +2480,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "11593.63",
+        "price": "11593.7",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2355,7 +2501,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2371,7 +2518,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2383,11 +2531,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2403,7 +2552,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2419,7 +2569,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2431,11 +2582,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "411.38",
+        "price": "411.14",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2451,7 +2603,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2467,7 +2620,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2479,11 +2633,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "241.97",
+        "price": "241.82",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2495,11 +2650,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "11593.63",
+        "price": "11593.7",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2515,7 +2671,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2531,7 +2688,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2547,7 +2705,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2559,11 +2718,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2575,11 +2735,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "363.37",
+        "price": "406.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (E)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2591,11 +2752,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "363.4",
+        "price": "406.21",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (E)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2607,11 +2769,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "368.7",
+        "price": "411.14",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "class": "Economy (E)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2627,7 +2790,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2639,11 +2803,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "273.97",
+        "price": "273.81",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2655,11 +2820,12 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "13074.61",
+        "price": "13074.67",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2675,7 +2841,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Istanbul - Erbil",
@@ -2691,7 +2858,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2707,7 +2875,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2719,11 +2888,12 @@
         "to_code": "EBL",
         "arrival_time": "09:00",
         "duration": "",
-        "price": "326.02",
+        "price": "325.84",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2739,7 +2909,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2755,7 +2926,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Istanbul - Erbil",
@@ -2767,11 +2939,12 @@
         "to_code": "EBL",
         "arrival_time": "04:45",
         "duration": "",
-        "price": "368.7",
+        "price": "368.49",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       }
     ],
     "Istanbul - Basra": [
@@ -2789,7 +2962,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Basra",
@@ -2805,7 +2979,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Basra",
@@ -2821,7 +2996,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Basra",
@@ -2837,7 +3013,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Basra",
@@ -2853,7 +3030,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Basra",
@@ -2869,7 +3047,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Istanbul - Najaf": [
@@ -2887,7 +3066,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Najaf",
@@ -2903,7 +3083,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Najaf",
@@ -2919,7 +3100,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Najaf",
@@ -2935,7 +3117,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Najaf",
@@ -2951,7 +3134,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Istanbul - Kirkuk": [
@@ -2969,7 +3153,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -2985,7 +3170,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3001,7 +3187,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3017,7 +3204,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3033,7 +3221,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3049,7 +3238,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3065,7 +3255,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3081,7 +3272,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3097,7 +3289,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Kirkuk",
@@ -3113,7 +3306,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Istanbul - Sulaymaniyah": [
@@ -3131,7 +3325,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Sulaymaniyah",
@@ -3147,7 +3342,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Istanbul - Sulaymaniyah",
@@ -3163,7 +3359,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Antalya - Baghdad": [],
@@ -3183,7 +3380,25 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "19.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.63",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Samsun - Baghdad",
@@ -3199,7 +3414,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Samsun - Baghdad",
@@ -3215,7 +3431,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Ankara - Baghdad": [],
@@ -3234,7 +3451,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3250,7 +3468,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3266,7 +3485,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3282,7 +3502,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3298,7 +3519,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3314,7 +3536,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3330,7 +3553,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3346,7 +3570,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3362,7 +3587,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Ankara - Kirkuk",
@@ -3378,7 +3604,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Baghdad - Istanbul": [
@@ -3396,7 +3623,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (M)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3412,7 +3640,8 @@
         "currency": "USD",
         "seats_available": "7",
         "class": "Economy (L)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3428,7 +3657,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3444,7 +3674,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3456,11 +3687,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "18913.48",
+        "price": "18913.54",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3476,7 +3708,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3492,7 +3725,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3508,7 +3742,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3524,7 +3759,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3540,7 +3776,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3556,7 +3793,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3568,11 +3806,12 @@
         "to_code": "IST",
         "arrival_time": "11:00",
         "duration": "",
-        "price": "221.64",
+        "price": "229.29",
         "currency": "USD",
-        "seats_available": "2",
-        "class": "Economy (Z)",
-        "fare_type": ""
+        "seats_available": "9",
+        "class": "Economy (X)",
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3588,7 +3827,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3604,7 +3844,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3616,11 +3857,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "13481.09",
+        "price": "13481.15",
         "currency": "USD",
-        "seats_available": "3",
+        "seats_available": "2",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3636,7 +3878,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3652,7 +3895,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3668,7 +3912,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3684,7 +3929,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3696,11 +3942,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "384.41",
+        "price": "384.25",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3716,7 +3963,8 @@
         "currency": "USD",
         "seats_available": "3",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3732,7 +3980,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3748,7 +3997,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3764,7 +4014,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3776,11 +4027,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "14963.04",
+        "price": "14963.1",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3796,7 +4048,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3812,7 +4065,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3828,7 +4082,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3844,7 +4099,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3860,7 +4116,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3876,7 +4133,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3888,11 +4146,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "14963.04",
+        "price": "14963.1",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3908,7 +4167,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3924,7 +4184,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3940,7 +4201,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3956,7 +4218,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3972,7 +4235,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -3988,7 +4252,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4000,11 +4265,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "13481.09",
+        "price": "13481.15",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4020,7 +4286,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4036,7 +4303,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4052,7 +4320,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4068,7 +4337,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4084,7 +4354,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4096,11 +4367,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "384.41",
+        "price": "384.25",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4116,7 +4388,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4128,11 +4401,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "11505.87",
+        "price": "11505.93",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4148,7 +4422,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4164,7 +4439,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4180,7 +4456,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4196,7 +4473,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4212,7 +4490,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4228,7 +4507,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4244,7 +4524,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4256,11 +4537,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "341.73",
+        "price": "341.59",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4276,7 +4558,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4292,7 +4575,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4308,7 +4592,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4324,7 +4609,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4336,11 +4622,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "12247.38",
+        "price": "12247.44",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4356,7 +4643,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4372,7 +4660,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4388,7 +4677,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4404,7 +4694,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4420,7 +4711,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4436,7 +4728,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4452,7 +4745,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4468,7 +4762,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4480,11 +4775,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "12247.38",
+        "price": "12247.44",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4500,7 +4796,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (S)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4516,7 +4813,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4532,7 +4830,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4548,7 +4847,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4564,7 +4864,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4580,7 +4881,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4596,7 +4898,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4612,7 +4915,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": "20 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4624,11 +4928,12 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "11505.87",
+        "price": "11505.93",
         "currency": "USD",
-        "seats_available": "8",
+        "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4644,7 +4949,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4660,7 +4966,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4676,7 +4983,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4692,7 +5000,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4708,7 +5017,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4724,7 +5034,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       }
     ],
     "Erbil - Istanbul": [
@@ -4738,59 +5049,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "313.51",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "fare_type": "Basic"
-      },
-      {
-        "route": "Erbil - Istanbul",
-        "search_date": "15.06.2026",
-        "airline": "AJet",
-        "flight_number": "VF152",
-        "from_code": "EBL",
-        "departure_time": "02:20",
-        "to_code": "SAW",
-        "arrival_time": "05:05",
-        "duration": "",
-        "price": "15011.73",
+        "price": "15011.79",
         "currency": "USD",
         "seats_available": "1",
         "class": "Economy (Y)",
-        "fare_type": ""
-      },
-      {
-        "route": "Erbil - Istanbul",
-        "search_date": "15.06.2026",
-        "airline": "AJet",
-        "flight_number": "VF152",
-        "from_code": "EBL",
-        "departure_time": "02:20",
-        "to_code": "SAW",
-        "arrival_time": "05:05",
-        "duration": "",
-        "price": "331.7",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "fare_type": "Basic"
-      },
-      {
-        "route": "Erbil - Istanbul",
-        "search_date": "15.06.2026",
-        "airline": "AJet",
-        "flight_number": "VF152",
-        "from_code": "EBL",
-        "departure_time": "02:20",
-        "to_code": "SAW",
-        "arrival_time": "05:05",
-        "duration": "",
-        "price": "417.48",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -4802,11 +5066,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "572.44",
+        "price": "508.24",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "class": "Economy (S)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4818,11 +5083,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "572.45",
+        "price": "508.25",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "class": "Economy (S)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4834,11 +5100,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "678.89",
+        "price": "614.57",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (H)",
-        "fare_type": "Ecofly"
+        "class": "Economy (S)",
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4854,7 +5121,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -4866,11 +5134,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "15011.73",
+        "price": "15011.79",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -4886,7 +5155,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -4902,7 +5172,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4918,7 +5189,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4930,11 +5202,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "417.48",
+        "price": "417.3",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -4950,7 +5223,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4966,7 +5240,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4978,11 +5253,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "508.18",
+        "price": "507.94",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -4994,11 +5270,12 @@
         "to_code": "IST",
         "arrival_time": "12:45",
         "duration": "",
-        "price": "550.86",
+        "price": "550.59",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5014,7 +5291,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (M)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5026,11 +5304,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "12246.85",
+        "price": "12246.91",
         "currency": "USD",
         "seats_available": "1",
         "class": "Economy (M)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5046,7 +5325,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (M)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5058,11 +5338,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "357.73",
+        "price": "357.58",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (M)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5078,7 +5359,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5094,7 +5376,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5110,7 +5393,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5126,7 +5410,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5138,11 +5423,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "465.5",
+        "price": "465.29",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5154,11 +5440,12 @@
         "to_code": "IST",
         "arrival_time": "12:45",
         "duration": "",
-        "price": "508.18",
+        "price": "507.94",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5174,7 +5461,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5186,11 +5474,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "13778.02",
+        "price": "13778.08",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5206,7 +5495,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5222,7 +5512,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5238,7 +5529,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5250,11 +5542,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "390.81",
+        "price": "390.65",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (B)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5270,7 +5563,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5286,7 +5580,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5298,11 +5593,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "470.84",
+        "price": "470.62",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5314,11 +5610,12 @@
         "to_code": "IST",
         "arrival_time": "12:45",
         "duration": "",
-        "price": "513.51",
+        "price": "513.28",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5334,7 +5631,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5346,11 +5644,12 @@
         "to_code": "SAW",
         "arrival_time": "06:20",
         "duration": "",
-        "price": "10815.19",
+        "price": "10815.25",
         "currency": "USD",
         "seats_available": "2",
         "class": "Economy (H)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5366,7 +5665,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5382,7 +5682,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5394,11 +5695,12 @@
         "to_code": "SAW",
         "arrival_time": "06:20",
         "duration": "",
-        "price": "326.79",
+        "price": "326.66",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (H)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5414,7 +5716,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5430,7 +5733,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5446,7 +5750,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5458,11 +5763,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "11555.63",
+        "price": "11555.69",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5478,7 +5784,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5490,11 +5797,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "342.8",
+        "price": "342.66",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (A)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5510,7 +5818,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5526,7 +5835,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5542,7 +5852,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5558,7 +5869,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5574,7 +5886,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5586,11 +5899,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "9580.41",
+        "price": "9580.47",
         "currency": "USD",
         "seats_available": "7",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5606,7 +5920,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5618,11 +5933,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "300.12",
+        "price": "300.01",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5638,7 +5954,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5654,7 +5971,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5670,7 +5988,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5686,7 +6005,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5698,11 +6018,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "465.5",
+        "price": "465.29",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5714,11 +6035,12 @@
         "to_code": "IST",
         "arrival_time": "12:45",
         "duration": "",
-        "price": "508.18",
+        "price": "507.94",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (E)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5734,7 +6056,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5746,11 +6069,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "9580.41",
+        "price": "9580.47",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5766,7 +6090,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5782,7 +6107,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5794,11 +6120,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "300.12",
+        "price": "300.01",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (O)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5814,7 +6141,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5830,7 +6158,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5846,7 +6175,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5862,7 +6192,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Q)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5878,7 +6209,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5890,11 +6222,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "8099.43",
+        "price": "8099.49",
         "currency": "USD",
         "seats_available": "6",
         "class": "Economy (T)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5910,7 +6243,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5922,11 +6256,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "268.11",
+        "price": "268.01",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -5942,7 +6277,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5958,7 +6294,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5970,11 +6307,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "422.82",
+        "price": "422.63",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5990,7 +6328,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -6002,11 +6341,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "7605.09",
+        "price": "7605.15",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": ""
+        "fare_type": "",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -6022,7 +6362,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -6034,11 +6375,12 @@
         "to_code": "SAW",
         "arrival_time": "05:05",
         "duration": "",
-        "price": "257.44",
+        "price": "257.36",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
-        "fare_type": "Basic"
+        "fare_type": "Basic",
+        "baggage": ""
       },
       {
         "route": "Erbil - Istanbul",
@@ -6054,7 +6396,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -6070,7 +6413,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -6086,7 +6430,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -6102,7 +6447,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -6114,11 +6460,12 @@
         "to_code": "IST",
         "arrival_time": "08:30",
         "duration": "",
-        "price": "422.82",
+        "price": "422.63",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       },
       {
         "route": "Erbil - Istanbul",
@@ -6130,11 +6477,12 @@
         "to_code": "IST",
         "arrival_time": "12:45",
         "duration": "",
-        "price": "422.82",
+        "price": "422.63",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (T)",
-        "fare_type": "Ecofly"
+        "fare_type": "Ecofly",
+        "baggage": "15 KG"
       }
     ],
     "Basra - Istanbul": [
@@ -6152,7 +6500,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Basra - Istanbul",
@@ -6168,7 +6517,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Basra - Istanbul",
@@ -6184,7 +6534,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Basra - Istanbul",
@@ -6200,7 +6551,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Basra - Istanbul",
@@ -6216,7 +6568,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Basra - Istanbul",
@@ -6232,7 +6585,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Najaf - Istanbul": [
@@ -6250,7 +6604,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Najaf - Istanbul",
@@ -6266,7 +6621,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Najaf - Istanbul",
@@ -6282,7 +6638,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Najaf - Istanbul",
@@ -6298,7 +6655,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Najaf - Istanbul",
@@ -6314,7 +6672,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Najaf - Istanbul",
@@ -6330,7 +6689,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Kirkuk - Istanbul": [
@@ -6348,7 +6708,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6364,7 +6725,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6380,7 +6742,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6396,7 +6759,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6412,7 +6776,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6428,7 +6793,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6444,7 +6810,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6460,7 +6827,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6476,7 +6844,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6492,7 +6861,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Sulaymaniyah - Istanbul": [
@@ -6510,7 +6880,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Sulaymaniyah - Istanbul",
@@ -6526,7 +6897,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Sulaymaniyah - Istanbul",
@@ -6542,7 +6914,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Baghdad - Antalya": [
@@ -6560,7 +6933,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6576,7 +6950,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6592,7 +6967,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6608,7 +6984,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6624,7 +7001,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6640,7 +7018,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6656,7 +7035,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6672,7 +7052,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6688,7 +7069,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Antalya",
@@ -6704,7 +7086,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Erbil - Antalya": [],
@@ -6723,7 +7106,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Baghdad - Samsun",
@@ -6739,7 +7123,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Samsun",
@@ -6755,7 +7140,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Baghdad - Samsun",
@@ -6771,7 +7157,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Baghdad - Ankara": [
@@ -6789,7 +7176,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       }
     ],
     "Kirkuk - Ankara": [
@@ -6807,7 +7195,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6823,7 +7212,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6839,7 +7229,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6855,7 +7246,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6871,7 +7263,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6887,7 +7280,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
-        "fare_type": "Yplat"
+        "fare_type": "Yplat",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6903,7 +7297,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6919,7 +7314,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6935,7 +7331,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6951,7 +7348,8 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Business (J)",
-        "fare_type": "Bplat"
+        "fare_type": "Bplat",
+        "baggage": "40 KG"
       }
     ]
   }
