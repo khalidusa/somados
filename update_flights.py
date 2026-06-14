@@ -120,25 +120,18 @@ def get_price(row, airline):
     return str(round(raw, 2))
 
 def get_baggage(row):
-    """استخراج معلومات الأمتعة من صف الرحلة."""
-    # البحث في عناصر HTML المحتملة
-    for bag_cls in ['baggage-info','bag-info','baggage','luggage','bag-allowance',
-                    'baggageInfo','flight-baggage','pax-baggage']:
-        el = row.find(class_=bag_cls)
-        if el:
-            return el.get_text(strip=True)
-    # البحث عن نص يحتوي "Hand Bag" أو "KG" أو "PC"
-    for el in row.find_all(True):
-        t = el.get_text(separator=' ', strip=True)
-        if re.search(r'Hand\s*Bag', t, re.IGNORECASE):
-            m = re.search(r'Hand\s*Bag[^,\n]*', t, re.IGNORECASE)
-            if m: return m.group(0).strip()
-    # بحث regex على نص الصف كاملاً
-    row_text = row.get_text(separator=' ')
-    m = re.search(r'(\d+)\s*(KG|Kg|kg)\b', row_text)
-    if m: return m.group(1) + ' KG'
-    m = re.search(r'(\d+)\s*(PC|Pc|pc)\b', row_text)
-    if m: return m.group(1) + ' PC'
+    """استخراج معلومات الأمتعة من صف الرحلة.
+    البنية: <i class="fa fa-suitcase ..."></i> ثم text node مباشر يحتوي "15 KG" أو "1 PC"
+    """
+    for icon in row.find_all('i', class_=lambda c: c and 'fa-suitcase' in c):
+        p = icon.parent  # العنصر الأب (عادةً <p>)
+        if p:
+            # اجمع كل النصوص المباشرة في هذا العنصر
+            texts = [t.strip() for t in p.find_all(string=True, recursive=False)]
+            combined = ' '.join(t for t in texts if t)
+            m = re.search(r'(\d+)\s*(KG|PC)\b', combined, re.IGNORECASE)
+            if m:
+                return m.group(1) + ' ' + m.group(2).upper()
     return ''
 
 def extract(html, route, date):
