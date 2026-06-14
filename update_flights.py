@@ -265,16 +265,40 @@ def get_price_usd(row, airline):
 
 
 def is_direct(row):
+    # 1. Flight number with comma = connecting (e.g. "G9284,G9...")
+    logo = row.find(class_='booking-item-airline-logo')
+    if logo:
+        num_el = logo.find(class_='mt0')
+        if num_el:
+            flight_num = num_el.get_text(strip=True)
+            if ',' in flight_num:
+                return False
+
+    # 2. Site marks it as direct explicitly
     if row.find(class_='flight-info__segments--direct'):
         return True
+
+    # 3. More than 2 airport codes = transit
     bolds = [el.get_text(strip=True) for el in row.find_all(class_='bold')]
     codes = [t for t in bolds if len(t) == 3 and t.isupper() and t.isalpha()]
     if len(codes) > 2:
         return False
+
+    # 4. Suspiciously long duration for known routes (>5h for Turkey-Iraq)
+    all_text = row.get_text(separator=' ', strip=True)
+    import re as _re
+    dm = _re.search(r'(\d+)\s+\d+\s*M', all_text)
+    if dm:
+        hours = int(dm.group(1))
+        if hours >= 5:
+            return False
+
+    # 5. Stop/transit keywords
     text = row.get_text().lower()
-    for kw in ['stop', 'transit', 'layover', 'via']:
+    for kw in ['stop', 'transit', 'layover', 'via', 'aktarma']:
         if kw in text:
             return False
+
     return True
 
 
