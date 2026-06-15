@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-15T12:53:39.566850",
-  "total": 450,
+  "updated_at": "2026-06-15T12:55:26.205287",
+  "total": 454,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -7239,7 +7239,72 @@
         "baggage": "20 KG"
       }
     ],
-    "Baghdad - Samsun": [],
+    "Baghdad - Samsun": [
+      {
+        "route": "Baghdad - Samsun",
+        "search_date": "17.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA301",
+        "from_code": "BGW",
+        "departure_time": "10:00",
+        "to_code": "SZF",
+        "arrival_time": "12:10",
+        "duration": "",
+        "price": "268.71",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Business (J)",
+        "baggage": "40 KG"
+      },
+      {
+        "route": "Baghdad - Samsun",
+        "search_date": "19.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA301",
+        "from_code": "BGW",
+        "departure_time": "10:00",
+        "to_code": "SZF",
+        "arrival_time": "12:10",
+        "duration": "",
+        "price": "188.57",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Samsun",
+        "search_date": "20.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA301",
+        "from_code": "BGW",
+        "departure_time": "10:00",
+        "to_code": "SZF",
+        "arrival_time": "12:10",
+        "duration": "",
+        "price": "188.57",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Samsun",
+        "search_date": "24.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA301",
+        "from_code": "BGW",
+        "departure_time": "10:00",
+        "to_code": "SZF",
+        "arrival_time": "12:10",
+        "duration": "",
+        "price": "188.57",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      }
+    ],
     "Baghdad - Ankara": [],
     "Kirkuk - Ankara": []
   }
