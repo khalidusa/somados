@@ -1,5 +1,6 @@
 import requests, time, sys, json, base64, os, re
 from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
 
 # تحميل المتغيرات من .env إن وُجد
@@ -121,17 +122,25 @@ def get_price(row, airline):
 
 def get_baggage(row):
     """استخراج معلومات الأمتعة من صف الرحلة.
-    البنية: <i class="fa fa-suitcase ..."></i> ثم text node مباشر يحتوي "15 KG" أو "1 PC"
+    - رحلات بأمتعة: <i class="fa fa-suitcase"></i> ثم text node "15 KG"
+    - رحلات حقيبة يد فقط: <i class="fa fa-suitcase"></i> ثم <res data-key="HandLuggage"></res>
     """
     for icon in row.find_all('i', class_=lambda c: c and 'fa-suitcase' in c):
-        p = icon.parent  # العنصر الأب (عادةً <p>)
-        if p:
-            # اجمع كل النصوص المباشرة في هذا العنصر
-            texts = [t.strip() for t in p.find_all(string=True, recursive=False)]
-            combined = ' '.join(t for t in texts if t)
-            m = re.search(r'(\d+)\s*(KG|PC)\b', combined, re.IGNORECASE)
-            if m:
-                return m.group(1) + ' ' + m.group(2).upper()
+        sibling = icon.next_sibling
+        while sibling is not None:
+            # عنصر HandLuggage → حقيبة يد فقط
+            if hasattr(sibling, 'get') and sibling.get('data-key','').lower() == 'handluggage':
+                return 'Hand Bag'
+            text = str(sibling).strip()
+            if text:
+                m = re.search(r'(\d+\s*(?:KG|PC))', text, re.IGNORECASE)
+                if m:
+                    return m.group(1).strip()
+            sibling = sibling.next_sibling
+    # احتياط: regex على نص الصف كاملاً
+    m = re.search(r'(Hand Bag|\d+\s*(?:KG|PC))', row.get_text(separator=' '), re.IGNORECASE)
+    if m:
+        return m.group(1).strip()
     return ''
 
 def extract(html, route, date):
@@ -195,12 +204,17 @@ def push_github(data):
     if r.status_code in [200,201]: print('✅ رُفع لـ GitHub'); return True
     print(f'❌ فشل: {r.status_code} {r.text[:100]}'); return False
 
+def fetch_date(cookies, dep, arr, date):
+    """بحث تاريخ واحد بـ session مستقل — يُستدعى من thread منفصل."""
+    time.sleep(0.5)  # jitter بسيط لتفادي flood
+    s = make_session(cookies)
+    return search(s, dep, arr, date)
+
 def main():
     print('='*70)
     print(f'  Somados Updater - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('='*70)
     cookies = load_cookies()
-    session = make_session(cookies)
     start = datetime.now() + timedelta(days=1)
     dates = [(start+timedelta(days=i)).strftime('%d.%m.%Y') for i in range(10)]
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
@@ -210,17 +224,33 @@ def main():
         name = route['name']
         print(f'[{ri}/{len(ROUTES)}] {name}')
         flights = []
-        for di,date in enumerate(dates,1):
-            print(f'  [{di}/10] {date}... ',end='',flush=True)
-            html,err = search(session,route['from'],route['to'],date)
+        date_results = {}  # di → (date, flights|None, err|None)
+
+        with ThreadPoolExecutor(max_workers=3) as ex:
+            future_map = {
+                ex.submit(fetch_date, cookies, route['from'], route['to'], date): (di, date)
+                for di, date in enumerate(dates, 1)
+            }
+            for future in as_completed(future_map):
+                di, date = future_map[future]
+                html, err = future.result()
+                if err:
+                    if 'expired' in err.lower():
+                        print(f'\n⚠️ الجلسة منتهية'); sys.exit(1)
+                    date_results[di] = (date, None, err)
+                else:
+                    date_results[di] = (date, extract(html, name, date), None)
+                time.sleep(1.5)  # delay بعد كل نتيجة
+
+        # طباعة النتائج بالترتيب
+        for di in sorted(date_results):
+            date, f, err = date_results[di]
             if err:
-                print(f'ERR: {err}')
-                if 'expired' in err.lower(): print('⚠️ الجلسة منتهية'); sys.exit(1)
-                continue
-            f = extract(html,name,date)
-            flights.extend(f)
-            print(f'OK {len(f)}')
-            time.sleep(3)
+                print(f'  [{di}/10] {date}... ERR: {err}')
+            else:
+                print(f'  [{di}/10] {date}... OK {len(f)}')
+                flights.extend(f)
+
         all_data[name] = flights
         total += len(flights)
     output = {'updated_at':datetime.now().isoformat(),'total':total,'routes':all_data}
