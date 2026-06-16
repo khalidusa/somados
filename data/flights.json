@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-16T08:18:49.331204",
-  "total": 197,
+  "updated_at": "2026-06-16T08:24:47.147074",
+  "total": 199,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -3147,10 +3147,10 @@
         "to_code": "EBL",
         "arrival_time": "00:00",
         "duration": "",
-        "price": "246.09",
+        "price": "224.69",
         "currency": "USD",
         "seats_available": "9",
-        "class": "PremiumCoach (U)",
+        "class": "PremiumCoach (V)",
         "baggage": "20 KG"
       },
       {
@@ -3163,11 +3163,43 @@
         "to_code": "EBL",
         "arrival_time": "08:05",
         "duration": "",
-        "price": "191.95",
+        "price": "153.55",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (T)",
+        "class": "Economy (U)",
         "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1830",
+        "from_code": "AYT",
+        "departure_time": "05:55",
+        "to_code": "EBL",
+        "arrival_time": "08:05",
+        "duration": "",
+        "price": "157.48",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "25.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD772",
+        "from_code": "AYT",
+        "departure_time": "21:45",
+        "to_code": "EBL",
+        "arrival_time": "00:00",
+        "duration": "",
+        "price": "299.59",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "PremiumCoach (Q)",
+        "baggage": "20 KG"
       }
     ],
     "Samsun - Baghdad": [],
