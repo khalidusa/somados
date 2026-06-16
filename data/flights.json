@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-16T08:54:47.181295",
-  "total": 450,
+  "updated_at": "2026-06-16T08:57:49.531368",
+  "total": 454,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -7238,7 +7238,72 @@
         "baggage": "30 KG"
       }
     ],
-    "Erbil - Antalya": [],
+    "Erbil - Antalya": [
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "18.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD771",
+        "from_code": "EBL",
+        "departure_time": "18:30",
+        "to_code": "AYT",
+        "arrival_time": "20:45",
+        "duration": "",
+        "price": "299.59",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "PremiumCoach (Q)",
+        "baggage": "20 KG"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "22.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "209.63",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Z)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "158.79",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "25.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD771",
+        "from_code": "EBL",
+        "departure_time": "18:30",
+        "to_code": "AYT",
+        "arrival_time": "20:45",
+        "duration": "",
+        "price": "224.69",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "PremiumCoach (V)",
+        "baggage": "20 KG"
+      }
+    ],
     "Baghdad - Samsun": [],
     "Baghdad - Ankara": [],
     "Kirkuk - Ankara": []
