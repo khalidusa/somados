@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-17T10:05:52.449059",
-  "total": 467,
+  "updated_at": "2026-06-17T10:09:00.354990",
+  "total": 468,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -7297,7 +7297,7 @@
         "to_code": "AYT",
         "arrival_time": "20:45",
         "duration": "",
-        "price": "299.59",
+        "price": "302.8",
         "currency": "USD",
         "seats_available": "9",
         "class": "PremiumCoach (Q)",
@@ -7313,7 +7313,7 @@
         "to_code": "AYT",
         "arrival_time": "11:30",
         "duration": "",
-        "price": "209.61",
+        "price": "212.82",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
@@ -7329,7 +7329,7 @@
         "to_code": "AYT",
         "arrival_time": "11:30",
         "duration": "",
-        "price": "158.8",
+        "price": "162.01",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
@@ -7345,11 +7345,27 @@
         "to_code": "AYT",
         "arrival_time": "20:45",
         "duration": "",
-        "price": "224.69",
+        "price": "227.9",
         "currency": "USD",
         "seats_available": "9",
         "class": "PremiumCoach (V)",
         "baggage": "20 KG"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "27.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "22:05",
+        "to_code": "AYT",
+        "arrival_time": "00:30",
+        "duration": "",
+        "price": "158.05",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
       }
     ],
     "Baghdad - Samsun": [
