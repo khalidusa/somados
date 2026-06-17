@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T20:37:09.458217",
+  "updated_at": "2026-06-16T20:54:11.902968",
   "total": 456,
   "routes": {
     "Istanbul - Baghdad": [
@@ -3019,10 +3019,10 @@
         "to_code": "EBL",
         "arrival_time": "00:00",
         "duration": "",
-        "price": "224.69",
+        "price": "246.09",
         "currency": "USD",
         "seats_available": "9",
-        "class": "PremiumCoach (V)",
+        "class": "PremiumCoach (U)",
         "baggage": "20 KG"
       },
       {
@@ -3035,7 +3035,7 @@
         "to_code": "EBL",
         "arrival_time": "08:05",
         "duration": "",
-        "price": "153.55",
+        "price": "151.36",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
@@ -3051,7 +3051,7 @@
         "to_code": "EBL",
         "arrival_time": "08:05",
         "duration": "",
-        "price": "157.48",
+        "price": "155.32",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
@@ -3067,10 +3067,10 @@
         "to_code": "EBL",
         "arrival_time": "00:00",
         "duration": "",
-        "price": "299.59",
+        "price": "267.49",
         "currency": "USD",
         "seats_available": "9",
-        "class": "PremiumCoach (Q)",
+        "class": "PremiumCoach (T)",
         "baggage": "20 KG"
       }
     ],
