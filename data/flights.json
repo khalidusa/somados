@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-17T10:02:44.706863",
-  "total": 468,
+  "updated_at": "2026-06-17T10:05:52.449059",
+  "total": 467,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -7159,22 +7159,6 @@
     "Baghdad - Antalya": [
       {
         "route": "Baghdad - Antalya",
-        "search_date": "17.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA209",
-        "from_code": "BGW",
-        "departure_time": "18:00",
-        "to_code": "AYT",
-        "arrival_time": "20:30",
-        "duration": "",
-        "price": "230.06",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Antalya",
         "search_date": "18.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA209",
@@ -7214,22 +7198,6 @@
         "departure_time": "17:00",
         "to_code": "AYT",
         "arrival_time": "19:30",
-        "duration": "",
-        "price": "230.06",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Antalya",
-        "search_date": "21.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA209",
-        "from_code": "BGW",
-        "departure_time": "18:00",
-        "to_code": "AYT",
-        "arrival_time": "20:30",
         "duration": "",
         "price": "230.06",
         "currency": "USD",
@@ -7294,6 +7262,22 @@
         "departure_time": "18:00",
         "to_code": "AYT",
         "arrival_time": "20:30",
+        "duration": "",
+        "price": "230.06",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Antalya",
+        "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA209",
+        "from_code": "BGW",
+        "departure_time": "17:00",
+        "to_code": "AYT",
+        "arrival_time": "19:30",
         "duration": "",
         "price": "230.06",
         "currency": "USD",
