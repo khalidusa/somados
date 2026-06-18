@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T08:48:01.957660",
+  "updated_at": "2026-06-18T08:49:56.458648",
   "total": 449,
   "routes": {
     "Istanbul - Baghdad": [
@@ -3177,22 +3177,6 @@
     "Ankara - Kirkuk": [
       {
         "route": "Ankara - Kirkuk",
-        "search_date": "18.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1706",
-        "from_code": "ESB",
-        "departure_time": "17:35",
-        "to_code": "BGW",
-        "arrival_time": "19:40",
-        "duration": "",
-        "price": "175.08",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Z)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Ankara - Kirkuk",
         "search_date": "19.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA248",
@@ -3322,6 +3306,22 @@
       {
         "route": "Ankara - Kirkuk",
         "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA248",
+        "from_code": "ESB",
+        "departure_time": "12:00",
+        "to_code": "KIK",
+        "arrival_time": "14:00",
+        "duration": "",
+        "price": "296.25",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Ankara - Kirkuk",
+        "search_date": "28.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA248",
         "from_code": "ESB",
