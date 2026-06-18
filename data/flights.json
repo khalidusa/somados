@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T08:35:28.581347",
-  "total": 450,
+  "updated_at": "2026-06-18T08:37:03.289485",
+  "total": 449,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2667,22 +2667,6 @@
     "Istanbul - Najaf": [
       {
         "route": "Istanbul - Najaf",
-        "search_date": "18.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA220",
-        "from_code": "IST",
-        "departure_time": "12:30",
-        "to_code": "NJF",
-        "arrival_time": "15:30",
-        "duration": "",
-        "price": "330.65",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Istanbul - Najaf",
         "search_date": "20.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA220",
@@ -2691,7 +2675,7 @@
         "to_code": "NJF",
         "arrival_time": "15:30",
         "duration": "",
-        "price": "330.65",
+        "price": "330.64",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2707,7 +2691,7 @@
         "to_code": "NJF",
         "arrival_time": "15:30",
         "duration": "",
-        "price": "330.65",
+        "price": "330.64",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2723,7 +2707,7 @@
         "to_code": "NJF",
         "arrival_time": "15:30",
         "duration": "",
-        "price": "330.65",
+        "price": "330.64",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2739,7 +2723,7 @@
         "to_code": "NJF",
         "arrival_time": "15:30",
         "duration": "",
-        "price": "330.65",
+        "price": "330.64",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2755,7 +2739,7 @@
         "to_code": "NJF",
         "arrival_time": "15:30",
         "duration": "",
-        "price": "330.65",
+        "price": "330.64",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
