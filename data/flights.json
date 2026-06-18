@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T18:39:24.410518",
-  "total": 410,
+  "updated_at": "2026-06-18T18:41:06.168011",
+  "total": 414,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2993,7 +2993,72 @@
         "baggage": "Hand Bag"
       }
     ],
-    "Samsun - Baghdad": [],
+    "Samsun - Baghdad": [
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "19.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.67",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "24.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.67",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "26.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.67",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.67",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      }
+    ],
     "Ankara - Baghdad": [
       {
         "route": "Ankara - Baghdad",
