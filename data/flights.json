@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T08:56:41.107833",
-  "total": 438,
+  "updated_at": "2026-06-18T09:00:11.212319",
+  "total": 435,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6323,70 +6323,6 @@
     "Kirkuk - Istanbul": [
       {
         "route": "Kirkuk - Istanbul",
-        "search_date": "18.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA251",
-        "from_code": "KIK",
-        "departure_time": "04:15",
-        "to_code": "IST",
-        "arrival_time": "07:00",
-        "duration": "",
-        "price": "379.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
-      },
-      {
-        "route": "Kirkuk - Istanbul",
-        "search_date": "19.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA251",
-        "from_code": "KIK",
-        "departure_time": "09:00",
-        "to_code": "IST",
-        "arrival_time": "11:40",
-        "duration": "",
-        "price": "379.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
-      },
-      {
-        "route": "Kirkuk - Istanbul",
-        "search_date": "20.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA213",
-        "from_code": "KIK",
-        "departure_time": "23:15",
-        "to_code": "IST",
-        "arrival_time": "02:00",
-        "duration": "",
-        "price": "379.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
-      },
-      {
-        "route": "Kirkuk - Istanbul",
-        "search_date": "21.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA213",
-        "from_code": "KIK",
-        "departure_time": "23:15",
-        "to_code": "IST",
-        "arrival_time": "02:00",
-        "duration": "",
-        "price": "379.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
-      },
-      {
-        "route": "Kirkuk - Istanbul",
         "search_date": "22.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA251",
@@ -6395,11 +6331,11 @@
         "to_code": "IST",
         "arrival_time": "11:40",
         "duration": "",
-        "price": "379.03",
+        "price": "258.34",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6411,11 +6347,11 @@
         "to_code": "IST",
         "arrival_time": "07:00",
         "duration": "",
-        "price": "258.34",
+        "price": "379.03",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -6468,6 +6404,22 @@
       {
         "route": "Kirkuk - Istanbul",
         "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA213",
+        "from_code": "KIK",
+        "departure_time": "23:15",
+        "to_code": "IST",
+        "arrival_time": "02:00",
+        "duration": "",
+        "price": "258.34",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Kirkuk - Istanbul",
+        "search_date": "28.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA213",
         "from_code": "KIK",
