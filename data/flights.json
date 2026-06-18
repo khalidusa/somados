@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T18:44:39.260831",
-  "total": 415,
+  "updated_at": "2026-06-18T18:45:34.618331",
+  "total": 414,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -4676,10 +4676,10 @@
         "to_code": "SAW",
         "arrival_time": "06:20",
         "duration": "",
-        "price": "11597.05",
+        "price": "12290.41",
         "currency": "USD",
         "seats_available": "4",
-        "class": "Economy (A)",
+        "class": "Economy (M)",
         "baggage": "Hand Bag"
       },
       {
@@ -4692,10 +4692,10 @@
         "to_code": "SAW",
         "arrival_time": "06:20",
         "duration": "",
-        "price": "256.8",
+        "price": "271.78",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (A)",
+        "class": "Economy (M)",
         "baggage": "Hand Bag"
       },
       {
@@ -4724,10 +4724,10 @@
         "to_code": "SAW",
         "arrival_time": "06:20",
         "duration": "",
-        "price": "343.73",
+        "price": "358.65",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (A)",
+        "class": "Economy (M)",
         "baggage": "Hand Bag"
       },
       {
@@ -5357,22 +5357,6 @@
       {
         "route": "Erbil - Istanbul",
         "search_date": "24.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC817",
-        "from_code": "EBL",
-        "departure_time": "01:55",
-        "to_code": "SAW",
-        "arrival_time": "04:30",
-        "duration": "",
-        "price": "216.65",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Z)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Erbil - Istanbul",
-        "search_date": "24.06.2026",
         "airline": "UR Airlines",
         "flight_number": "UD761",
         "from_code": "EBL",
@@ -5385,22 +5369,6 @@
         "seats_available": "9",
         "class": "PremiumCoach (V)",
         "baggage": "20 KG"
-      },
-      {
-        "route": "Erbil - Istanbul",
-        "search_date": "24.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC821",
-        "from_code": "EBL",
-        "departure_time": "04:20",
-        "to_code": "SAW",
-        "arrival_time": "06:55",
-        "duration": "",
-        "price": "232.39",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Z)",
-        "baggage": "Hand Bag"
       },
       {
         "route": "Erbil - Istanbul",
@@ -5500,6 +5468,22 @@
       },
       {
         "route": "Erbil - Istanbul",
+        "search_date": "24.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK805",
+        "from_code": "EBL",
+        "departure_time": "05:40",
+        "to_code": "IST",
+        "arrival_time": "08:30",
+        "duration": "",
+        "price": "465.17",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Q)",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Erbil - Istanbul",
         "search_date": "25.06.2026",
         "airline": "AJet",
         "flight_number": "VF152",
@@ -5510,7 +5494,7 @@
         "duration": "",
         "price": "9118.93",
         "currency": "USD",
-        "seats_available": "2",
+        "seats_available": "3",
         "class": "Economy (E)",
         "baggage": "Hand Bag"
       },
