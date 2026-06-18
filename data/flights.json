@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T08:46:43.351595",
+  "updated_at": "2026-06-18T08:48:01.957660",
   "total": 449,
   "routes": {
     "Istanbul - Baghdad": [
@@ -3135,10 +3135,10 @@
         "to_code": "BGW",
         "arrival_time": "19:40",
         "duration": "",
-        "price": "265.0",
+        "price": "283.06",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (X)",
+        "class": "Economy (S)",
         "baggage": "Hand Bag"
       },
       {
@@ -3151,10 +3151,10 @@
         "to_code": "BGW",
         "arrival_time": "09:40",
         "duration": "",
-        "price": "154.91",
+        "price": "121.37",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (T)",
+        "class": "Economy (U)",
         "baggage": "Hand Bag"
       },
       {
@@ -3167,7 +3167,7 @@
         "to_code": "BGW",
         "arrival_time": "19:40",
         "duration": "",
-        "price": "175.08",
+        "price": "175.12",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Z)",
