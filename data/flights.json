@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T18:04:58.784108",
-  "total": 374,
+  "updated_at": "2026-06-19T18:05:56.206665",
+  "total": 373,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2047,10 +2047,10 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "265.36",
+        "price": "276.03",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (O)",
+        "class": "Economy (S)",
         "baggage": "Hand Bag"
       },
       {
@@ -2063,10 +2063,10 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "12625.86",
+        "price": "13121.27",
         "currency": "USD",
-        "seats_available": "3",
-        "class": "Economy (O)",
+        "seats_available": "4",
+        "class": "Economy (S)",
         "baggage": "Hand Bag"
       },
       {
@@ -2079,10 +2079,10 @@
         "to_code": "EBL",
         "arrival_time": "00:30",
         "duration": "",
-        "price": "278.84",
+        "price": "289.54",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (O)",
+        "class": "Economy (S)",
         "baggage": "Hand Bag"
       },
       {
@@ -2344,6 +2344,22 @@
       {
         "route": "Istanbul - Erbil",
         "search_date": "29.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC816",
+        "from_code": "SAW",
+        "departure_time": "22:30",
+        "to_code": "EBL",
+        "arrival_time": "00:50",
+        "duration": "",
+        "price": "181.69",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Erbil",
+        "search_date": "29.06.2026",
         "airline": "AJet",
         "flight_number": "VF151",
         "from_code": "SAW",
@@ -2387,6 +2403,22 @@
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (V)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Erbil",
+        "search_date": "29.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC820",
+        "from_code": "SAW",
+        "departure_time": "00:55",
+        "to_code": "EBL",
+        "arrival_time": "03:15",
+        "duration": "",
+        "price": "210.68",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Z)",
         "baggage": "Hand Bag"
       },
       {
@@ -2468,54 +2500,6 @@
         "seats_available": "9",
         "class": "Business (C2)",
         "baggage": "92 KG"
-      },
-      {
-        "route": "Istanbul - Erbil",
-        "search_date": "29.06.2026",
-        "airline": "Turkish Airlines",
-        "flight_number": "TK804",
-        "from_code": "IST",
-        "departure_time": "02:10",
-        "to_code": "EBL",
-        "arrival_time": "04:45",
-        "duration": "",
-        "price": "405.96",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (E)",
-        "baggage": "15 KG"
-      },
-      {
-        "route": "Istanbul - Erbil",
-        "search_date": "29.06.2026",
-        "airline": "Turkish Airlines",
-        "flight_number": "TK804",
-        "from_code": "IST",
-        "departure_time": "02:10",
-        "to_code": "EBL",
-        "arrival_time": "04:45",
-        "duration": "",
-        "price": "406.0",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (E)",
-        "baggage": "15 KG"
-      },
-      {
-        "route": "Istanbul - Erbil",
-        "search_date": "29.06.2026",
-        "airline": "Turkish Airlines",
-        "flight_number": "TK804",
-        "from_code": "IST",
-        "departure_time": "02:10",
-        "to_code": "EBL",
-        "arrival_time": "04:45",
-        "duration": "",
-        "price": "413.31",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (E)",
-        "baggage": "15 KG"
       }
     ],
     "Istanbul - Basra": [
