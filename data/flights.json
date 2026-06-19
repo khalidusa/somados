@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T11:05:52.076042",
+  "updated_at": "2026-06-19T11:08:05.034080",
   "total": 315,
   "routes": {
     "Istanbul - Baghdad": [],
@@ -1395,7 +1395,7 @@
     "Samsun - Baghdad": [
       {
         "route": "Samsun - Baghdad",
-        "search_date": "19.06.2026",
+        "search_date": "20.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA302",
         "from_code": "SZF",
