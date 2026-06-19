@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T17:18:34.151022",
-  "total": 177,
+  "updated_at": "2026-06-19T17:19:42.328916",
+  "total": 178,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2846,7 +2846,24 @@
         "baggage": "30 KG"
       }
     ],
-    "Antalya - Baghdad": [],
+    "Antalya - Baghdad": [
+      {
+        "route": "Antalya - Baghdad",
+        "search_date": "20.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA210",
+        "from_code": "AYT",
+        "departure_time": "20:30",
+        "to_code": "BGW",
+        "arrival_time": "23:00",
+        "duration": "",
+        "price": "333.46",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      }
+    ],
     "Antalya - Erbil": [],
     "Samsun - Baghdad": [],
     "Ankara - Baghdad": [],
