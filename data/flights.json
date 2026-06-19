@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T10:59:51.601402",
-  "total": 317,
+  "updated_at": "2026-06-19T11:00:50.946354",
+  "total": 316,
   "routes": {
     "Istanbul - Baghdad": [],
     "Istanbul - Erbil": [
@@ -1099,22 +1099,6 @@
       {
         "route": "Istanbul - Najaf",
         "search_date": "24.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA220",
-        "from_code": "IST",
-        "departure_time": "12:30",
-        "to_code": "NJF",
-        "arrival_time": "15:30",
-        "duration": "",
-        "price": "330.6",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Istanbul - Najaf",
-        "search_date": "25.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA220",
         "from_code": "IST",
