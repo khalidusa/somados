@@ -732,7 +732,9 @@ function showDirection(dir) {
   grid.innerHTML = '';
 
   cfg.dests.forEach((d, i) => {
-    const flights = (flightsData.routes && flightsData.routes[d.key]) || [];
+    const allFlights = (flightsData.routes && flightsData.routes[d.key]) || [];
+    // فلتر بالكودات الصحيحة لمنع تلوث البيانات
+    const flights = allFlights.filter(f => f.from_code === d.fc && f.to_code === d.tc);
     const prices = flights.filter(f => f.price && parseFloat(f.price) > 0).map(f => parseFloat(f.price));
     const minP = prices.length ? Math.min(...prices) : null;
 
@@ -756,7 +758,7 @@ function showDirection(dir) {
     el.onclick = (e) => {
       if (e.target.closest('a')) return;
       if (!flights.length) { window.open(waEmpty,'_blank'); return; }
-      showFlights(d.key, d.from, d.to); showView('flights');
+      showFlights(d.key, d.from, d.to, d.fc, d.tc); showView('flights');
     };
     // onclick set above
     grid.appendChild(el);
@@ -765,12 +767,16 @@ function showDirection(dir) {
   showView('direction');
 }
 
-function showFlights(routeKey, fromAr, toAr) {
+function showFlights(routeKey, fromAr, toAr, fromCode, toCode) {
   currentRouteKey = routeKey;
   document.getElementById('flights-title').textContent = fromAr + ' → ' + toAr;
   document.getElementById('flights-sub').textContent = 'رحلات مباشرة · أسعار تشمل رسوم الوكالة';
 
-  const flights = (flightsData.routes && flightsData.routes[routeKey]) || [];
+  const allFlights = (flightsData.routes && flightsData.routes[routeKey]) || [];
+  // فلتر بالكودات الصحيحة لمنع عرض رحلات خاطئة
+  const flights = (fromCode && toCode)
+    ? allFlights.filter(f => f.from_code === fromCode && f.to_code === toCode)
+    : allFlights;
   const tabs = document.getElementById('date-tabs');
   const list = document.getElementById('flights-list');
 

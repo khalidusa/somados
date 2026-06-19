@@ -1,6 +1,5 @@
-import requests, time, sys, json, base64, os, re, random
+import requests, time, sys, json, base64, os, re
 from datetime import datetime, timedelta
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
 
 # تحميل المتغيرات من .env إن وُجد
@@ -216,20 +215,14 @@ def push_github(data):
     if r.status_code in [200,201]: print('✅ رُفع لـ GitHub'); return True
     print(f'❌ فشل: {r.status_code} {r.text[:100]}'); return False
 
-def fetch_date(cookies, dep, arr, date, route_name):
-    """بحث تاريخ واحد بـ session مستقل — يُستدعى من thread."""
-    time.sleep(random.uniform(0.2, 0.7))
-    s = make_session(cookies)
-    html, err = search(s, dep, arr, date)
-    if err:
-        return date, None, err
-    return date, extract(html, route_name, date), None
-
 def main():
     print('='*70)
     print(f'  Somados Updater - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('='*70)
     cookies = load_cookies()
+    # session واحد لكل المسار — الموقع يعتمد على server-side session
+    # لا يمكن استخدام threads لأنها تشارك نفس ASP.NET_SessionId
+    session = make_session(cookies)
     start = datetime.now() + timedelta(days=1)
     dates = [(start+timedelta(days=i)).strftime('%d.%m.%Y') for i in range(10)]
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
@@ -240,31 +233,18 @@ def main():
         name = route['name']
         print(f'[{ri}/{len(ROUTES)}] {name}')
         flights = []
-        results = {}
-
-        with ThreadPoolExecutor(max_workers=8) as ex:
-            future_map = {
-                ex.submit(fetch_date, cookies, route['from'], route['to'], date, name): (di, date)
-                for di, date in enumerate(dates, 1)
-            }
-            for future in as_completed(future_map):
-                di, date = future_map[future]
-                d, f, err = future.result()
-                if err:
-                    if 'expired' in err.lower():
-                        print(f'\n⚠️ الجلسة منتهية'); sys.exit(1)
-                    results[di] = (date, None, err)
-                else:
-                    results[di] = (date, f, None)
-
-        for di in sorted(results):
-            date, f, err = results[di]
+        for di, date in enumerate(dates, 1):
+            print(f'  [{di}/10] {date}... ', end='', flush=True)
+            html, err = search(session, route['from'], route['to'], date)
             if err:
-                print(f'  [{di}/10] {date}... ERR: {err}')
-            else:
-                print(f'  [{di}/10] {date}... OK {len(f)}')
-                flights.extend(f)
-
+                print(f'ERR: {err}')
+                if 'expired' in err.lower():
+                    print('⚠️ الجلسة منتهية'); sys.exit(1)
+                continue
+            f = extract(html, name, date)
+            flights.extend(f)
+            print(f'OK {len(f)}')
+            time.sleep(0.8)
         all_data[name] = flights
         total += len(flights)
 
