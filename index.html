@@ -733,8 +733,11 @@ function showDirection(dir) {
 
   cfg.dests.forEach((d, i) => {
     const allFlights = (flightsData.routes && flightsData.routes[d.key]) || [];
-    // فلتر بالكودات الصحيحة لمنع تلوث البيانات
-    const flights = allFlights.filter(f => f.from_code === d.fc && f.to_code === d.tc);
+    // مطارات متعددة لنفس المدينة (IST و SAW كلاهما اسطنبول)
+    const AIRPORT_ALIASES = {'IST':['IST','SAW'], 'SAW':['IST','SAW']};
+    const fcList = AIRPORT_ALIASES[d.fc] || [d.fc];
+    const tcList = AIRPORT_ALIASES[d.tc] || [d.tc];
+    const flights = allFlights.filter(f => fcList.includes(f.from_code) && tcList.includes(f.to_code));
     const prices = flights.filter(f => f.price && parseFloat(f.price) > 0).map(f => parseFloat(f.price));
     const minP = prices.length ? Math.min(...prices) : null;
 
@@ -773,9 +776,14 @@ function showFlights(routeKey, fromAr, toAr, fromCode, toCode) {
   document.getElementById('flights-sub').textContent = 'رحلات مباشرة · أسعار تشمل رسوم الوكالة';
 
   const allFlights = (flightsData.routes && flightsData.routes[routeKey]) || [];
-  // فلتر بالكودات الصحيحة لمنع عرض رحلات خاطئة
+  // مطارات متعددة لنفس المدينة
+  const AIRPORT_ALIASES2 = {'IST':['IST','SAW'], 'SAW':['IST','SAW']};
   const flights = (fromCode && toCode)
-    ? allFlights.filter(f => f.from_code === fromCode && f.to_code === toCode)
+    ? allFlights.filter(f => {
+        const fc2 = AIRPORT_ALIASES2[fromCode] || [fromCode];
+        const tc2 = AIRPORT_ALIASES2[toCode]   || [toCode];
+        return fc2.includes(f.from_code) && tc2.includes(f.to_code);
+      })
     : allFlights;
   const tabs = document.getElementById('date-tabs');
   const list = document.getElementById('flights-list');
