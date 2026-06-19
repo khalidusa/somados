@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T11:23:45.742938",
+  "updated_at": "2026-06-19T11:24:47.808971",
   "total": 200,
   "routes": {
     "Istanbul - Baghdad": [],
@@ -3169,10 +3169,10 @@
         "to_code": "ESB",
         "arrival_time": "12:40",
         "duration": "",
-        "price": "265.54",
+        "price": "228.57",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (X)",
+        "class": "Economy (V)",
         "baggage": "Hand Bag"
       },
       {
@@ -3185,7 +3185,7 @@
         "to_code": "ESB",
         "arrival_time": "22:40",
         "duration": "",
-        "price": "264.8",
+        "price": "263.23",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (X)",
