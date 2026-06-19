@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T17:32:10.542866",
-  "total": 387,
+  "updated_at": "2026-06-19T17:33:10.589234",
+  "total": 388,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6229,7 +6229,24 @@
         "baggage": "30 KG"
       }
     ],
-    "Erbil - Antalya": [],
+    "Erbil - Antalya": [
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "25.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD771",
+        "from_code": "EBL",
+        "departure_time": "18:30",
+        "to_code": "AYT",
+        "arrival_time": "20:45",
+        "duration": "",
+        "price": "249.3",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "PremiumCoach (U)",
+        "baggage": "20 KG"
+      }
+    ],
     "Baghdad - Samsun": [],
     "Baghdad - Ankara": [],
     "Kirkuk - Ankara": []
