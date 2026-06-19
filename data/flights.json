@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T13:26:27.774327",
-  "total": 390,
+  "updated_at": "2026-06-19T13:27:29.910025",
+  "total": 394,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6277,7 +6277,72 @@
         "baggage": "30 KG"
       }
     ],
-    "Erbil - Antalya": [],
+    "Erbil - Antalya": [
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "22.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "169.78",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "228.43",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Z)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "27.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "22:05",
+        "to_code": "AYT",
+        "arrival_time": "00:30",
+        "duration": "",
+        "price": "156.08",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "29.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "157.63",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      }
+    ],
     "Baghdad - Samsun": [],
     "Baghdad - Ankara": [],
     "Kirkuk - Ankara": []
