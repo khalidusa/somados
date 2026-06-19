@@ -1,4 +1,4 @@
-import requests, time, sys, json, base64, os, re
+import requests, time, sys, json, base64, os, re, random
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
@@ -189,6 +189,18 @@ def extract(html, route, date):
         })
     return results
 
+TG_TOKEN = os.environ.get('TG_TOKEN', '8856103719:AAGiK2kxxR-7j0nYyBpSJrtmbsFV6_RjwJs')
+TG_CHAT  = os.environ.get('TG_CHAT',  '725243049')
+
+def send_telegram(msg):
+    try:
+        requests.post(
+            f'https://api.telegram.org/bot{TG_TOKEN}/sendMessage',
+            data={'chat_id': TG_CHAT, 'text': msg, 'parse_mode': 'HTML'},
+            timeout=10
+        )
+    except Exception: pass
+
 def push_github(data):
     hdrs = {'Authorization':f'token {GITHUB_TOKEN}',
             'Accept':'application/vnd.github.v3+json'}
@@ -204,11 +216,14 @@ def push_github(data):
     if r.status_code in [200,201]: print('✅ رُفع لـ GitHub'); return True
     print(f'❌ فشل: {r.status_code} {r.text[:100]}'); return False
 
-def fetch_date(cookies, dep, arr, date):
-    """بحث تاريخ واحد بـ session مستقل — يُستدعى من thread منفصل."""
-    time.sleep(0.5)  # jitter بسيط لتفادي flood
+def fetch_date(cookies, dep, arr, date, route_name):
+    """بحث تاريخ واحد بـ session مستقل — يُستدعى من thread."""
+    time.sleep(random.uniform(0.2, 0.7))
     s = make_session(cookies)
-    return search(s, dep, arr, date)
+    html, err = search(s, dep, arr, date)
+    if err:
+        return date, None, err
+    return date, extract(html, route_name, date), None
 
 def main():
     print('='*70)
@@ -220,31 +235,30 @@ def main():
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
     all_data = {}
     total = 0
-    for ri,route in enumerate(ROUTES,1):
+    t_start = time.time()
+    for ri, route in enumerate(ROUTES, 1):
         name = route['name']
         print(f'[{ri}/{len(ROUTES)}] {name}')
         flights = []
-        date_results = {}  # di → (date, flights|None, err|None)
+        results = {}
 
-        with ThreadPoolExecutor(max_workers=3) as ex:
+        with ThreadPoolExecutor(max_workers=8) as ex:
             future_map = {
-                ex.submit(fetch_date, cookies, route['from'], route['to'], date): (di, date)
+                ex.submit(fetch_date, cookies, route['from'], route['to'], date, name): (di, date)
                 for di, date in enumerate(dates, 1)
             }
             for future in as_completed(future_map):
                 di, date = future_map[future]
-                html, err = future.result()
+                d, f, err = future.result()
                 if err:
                     if 'expired' in err.lower():
                         print(f'\n⚠️ الجلسة منتهية'); sys.exit(1)
-                    date_results[di] = (date, None, err)
+                    results[di] = (date, None, err)
                 else:
-                    date_results[di] = (date, extract(html, name, date), None)
-                time.sleep(1.5)  # delay بعد كل نتيجة
+                    results[di] = (date, f, None)
 
-        # طباعة النتائج بالترتيب
-        for di in sorted(date_results):
-            date, f, err = date_results[di]
+        for di in sorted(results):
+            date, f, err = results[di]
             if err:
                 print(f'  [{di}/10] {date}... ERR: {err}')
             else:
@@ -253,9 +267,29 @@ def main():
 
         all_data[name] = flights
         total += len(flights)
-    output = {'updated_at':datetime.now().isoformat(),'total':total,'routes':all_data}
+
+    elapsed = round(time.time() - t_start)
+    mins, secs = divmod(elapsed, 60)
+    output = {'updated_at': datetime.now().isoformat(), 'total': total, 'routes': all_data}
     print(f'\n📤 يرفع {total} رحلة...')
-    push_github(output)
+    ok = push_github(output)
+
+    # إشعار Telegram
+    now_str = datetime.now().strftime('%Y-%m-%d %H:%M')
+    if ok:
+        send_telegram(
+            f'✅ <b>somados.com — تحديث ناجح</b>\n'
+            f'🕐 {now_str}\n'
+            f'✈️ {total} رحلة عبر {len(ROUTES)} مسار\n'
+            f'⏱ الوقت: {mins}د {secs}ث'
+        )
+        print(f'📱 تم إرسال إشعار تيليجرام')
+    else:
+        send_telegram(
+            f'❌ <b>somados.com — فشل الرفع</b>\n'
+            f'🕐 {now_str}\n'
+            f'راجع اللوق للتفاصيل'
+        )
 
 if __name__=='__main__':
     main()
