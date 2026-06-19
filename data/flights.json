@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T17:50:02.557019",
-  "total": 406,
+  "updated_at": "2026-06-19T17:50:58.943412",
+  "total": 403,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -3524,7 +3524,7 @@
         "duration": "",
         "price": "275.14",
         "currency": "USD",
-        "seats_available": "8",
+        "seats_available": "9",
         "class": "Economy (L)",
         "baggage": ""
       },
@@ -3610,22 +3610,6 @@
       },
       {
         "route": "Baghdad - Istanbul",
-        "search_date": "22.06.2026",
-        "airline": "Turkish Airlines",
-        "flight_number": "TK843",
-        "from_code": "BGW",
-        "departure_time": "10:25",
-        "to_code": "IST",
-        "arrival_time": "13:30",
-        "duration": "",
-        "price": "374.5",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (T)",
-        "baggage": "15 KG"
-      },
-      {
-        "route": "Baghdad - Istanbul",
         "search_date": "23.06.2026",
         "airline": "Basra",
         "flight_number": "BH101",
@@ -3650,10 +3634,10 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "12294.66",
+        "price": "11551.01",
         "currency": "USD",
         "seats_available": "2",
-        "class": "Economy (S)",
+        "class": "Economy (O)",
         "baggage": "Hand Bag"
       },
       {
@@ -3666,10 +3650,10 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "271.78",
+        "price": "255.73",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (S)",
+        "class": "Economy (O)",
         "baggage": "Hand Bag"
       },
       {
@@ -3778,10 +3762,10 @@
         "to_code": "SAW",
         "arrival_time": "06:25",
         "duration": "",
-        "price": "359.89",
+        "price": "343.9",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (S)",
+        "class": "Economy (O)",
         "baggage": "Hand Bag"
       },
       {
@@ -3947,22 +3931,6 @@
       {
         "route": "Baghdad - Istanbul",
         "search_date": "25.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC657",
-        "from_code": "BGW",
-        "departure_time": "03:25",
-        "to_code": "SAW",
-        "arrival_time": "06:20",
-        "duration": "",
-        "price": "201.27",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Z)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Baghdad - Istanbul",
-        "search_date": "25.06.2026",
         "airline": "AJet",
         "flight_number": "VF132",
         "from_code": "BGW",
@@ -4083,6 +4051,22 @@
         "arrival_time": "08:30",
         "duration": "",
         "price": "330.85",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (L)",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Baghdad - Istanbul",
+        "search_date": "25.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK803",
+        "from_code": "BGW",
+        "departure_time": "05:25",
+        "to_code": "IST",
+        "arrival_time": "08:30",
+        "duration": "",
+        "price": "331.7",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (L)",
@@ -4267,22 +4251,6 @@
       {
         "route": "Baghdad - Istanbul",
         "search_date": "27.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC657",
-        "from_code": "BGW",
-        "departure_time": "03:25",
-        "to_code": "SAW",
-        "arrival_time": "06:20",
-        "duration": "",
-        "price": "281.19",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (X)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Baghdad - Istanbul",
-        "search_date": "27.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA215",
         "from_code": "BGW",
@@ -4362,6 +4330,22 @@
       },
       {
         "route": "Baghdad - Istanbul",
+        "search_date": "27.06.2026",
+        "airline": "Turkish Airlines",
+        "flight_number": "TK843",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "IST",
+        "arrival_time": "13:30",
+        "duration": "",
+        "price": "426.75",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Q)",
+        "baggage": "15 KG"
+      },
+      {
+        "route": "Baghdad - Istanbul",
         "search_date": "28.06.2026",
         "airline": "AJet",
         "flight_number": "VF132",
@@ -4407,22 +4391,6 @@
         "seats_available": "9",
         "class": "Economy (Y)",
         "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Istanbul",
-        "search_date": "28.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC657",
-        "from_code": "BGW",
-        "departure_time": "03:25",
-        "to_code": "SAW",
-        "arrival_time": "06:20",
-        "duration": "",
-        "price": "262.31",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (X)",
-        "baggage": "Hand Bag"
       },
       {
         "route": "Baghdad - Istanbul",
@@ -4535,22 +4503,6 @@
         "seats_available": "9",
         "class": "Economy (Y)",
         "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Istanbul",
-        "search_date": "29.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC657",
-        "from_code": "BGW",
-        "departure_time": "03:25",
-        "to_code": "SAW",
-        "arrival_time": "06:20",
-        "duration": "",
-        "price": "288.41",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (X)",
-        "baggage": "Hand Bag"
       },
       {
         "route": "Baghdad - Istanbul",
