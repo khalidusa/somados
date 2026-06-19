@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T17:35:50.091482",
-  "total": 393,
+  "updated_at": "2026-06-19T17:37:22.685155",
+  "total": 397,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6331,6 +6331,71 @@
         "baggage": "Hand Bag"
       }
     ],
-    "Kirkuk - Ankara": []
+    "Kirkuk - Ankara": [
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "26.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA247",
+        "from_code": "KIK",
+        "departure_time": "16:20",
+        "to_code": "ESB",
+        "arrival_time": "18:30",
+        "duration": "",
+        "price": "294.17",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Business (J)",
+        "baggage": "40 KG"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA247",
+        "from_code": "KIK",
+        "departure_time": "09:00",
+        "to_code": "ESB",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "294.17",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Business (J)",
+        "baggage": "40 KG"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "28.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA247",
+        "from_code": "KIK",
+        "departure_time": "09:00",
+        "to_code": "ESB",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "294.17",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Business (J)",
+        "baggage": "40 KG"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "29.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA247",
+        "from_code": "KIK",
+        "departure_time": "16:20",
+        "to_code": "ESB",
+        "arrival_time": "18:30",
+        "duration": "",
+        "price": "294.17",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Business (J)",
+        "baggage": "40 KG"
+      }
+    ]
   }
 }
