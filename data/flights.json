@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T17:19:42.328916",
-  "total": 178,
+  "updated_at": "2026-06-19T17:20:40.638040",
+  "total": 179,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2864,7 +2864,24 @@
         "baggage": "30 KG"
       }
     ],
-    "Antalya - Erbil": [],
+    "Antalya - Erbil": [
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "25.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD772",
+        "from_code": "AYT",
+        "departure_time": "21:45",
+        "to_code": "EBL",
+        "arrival_time": "00:00",
+        "duration": "",
+        "price": "270.7",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "PremiumCoach (T)",
+        "baggage": "20 KG"
+      }
+    ],
     "Samsun - Baghdad": [],
     "Ankara - Baghdad": [],
     "Ankara - Kirkuk": [],
