@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T15:21:05.062349",
+  "updated_at": "2026-06-20T15:22:34.313822",
   "total": 426,
   "routes": {
     "Istanbul - Baghdad": [
@@ -6228,13 +6228,13 @@
         "route": "Kirkuk - Istanbul",
         "search_date": "22.06.2026",
         "airline": "Iraqi Airways",
-        "flight_number": "IA251",
-        "from_code": "KIK",
-        "departure_time": "09:00",
+        "flight_number": "IA219",
+        "from_code": "NJF",
+        "departure_time": "08:30",
         "to_code": "IST",
-        "arrival_time": "11:40",
+        "arrival_time": "11:30",
         "duration": "",
-        "price": "258.34",
+        "price": "203.66",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
