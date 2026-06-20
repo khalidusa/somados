@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T11:58:16.693290",
-  "total": 407,
+  "updated_at": "2026-06-20T11:59:50.784902",
+  "total": 412,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6476,6 +6476,86 @@
       }
     ],
     "Kirkuk - Ankara": [
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "21.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "ESB",
+        "arrival_time": "12:40",
+        "duration": "",
+        "price": "269.23",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (S)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "22.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "ESB",
+        "arrival_time": "12:40",
+        "duration": "",
+        "price": "269.23",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (S)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "23.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "ESB",
+        "arrival_time": "12:40",
+        "duration": "",
+        "price": "269.23",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (S)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "24.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "ESB",
+        "arrival_time": "12:40",
+        "duration": "",
+        "price": "269.23",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (S)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "10:25",
+        "to_code": "ESB",
+        "arrival_time": "12:40",
+        "duration": "",
+        "price": "269.23",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (S)",
+        "baggage": "Hand Bag"
+      },
       {
         "route": "Kirkuk - Ankara",
         "search_date": "26.06.2026",
