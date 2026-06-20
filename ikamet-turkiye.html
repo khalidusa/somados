@@ -377,7 +377,7 @@ const INSURANCE = [
 const WHATSAPP_NUMBER = "905345231711";
 
 // Google Sheets Apps Script webhook — استبدل بالـURL بعد نشر Apps Script
-const SHEETS_URL = "https://script.google.com/macros/s/AKfycbxERPZa6JBG3axU1yclGh042fJ-5QGnZdyJYdOgkTp_Jq0b4foEv928KTft1rBFMtM6/exec";
+const SHEETS_URL = "https://script.google.com/macros/s/AKfycbyd7g5lDc9mB5WKpTcd0e8U1sLACuaLosWsswTacWJgSv7-dTBUelTSExtvvoWNsW6EZw/exec";
 
 const RES_TYPE_LABELS = {
   ar: { tourist:"إقامة سياحية", property:"إقامة عقارية", family:"إقامة عائلية", student:"إقامة طالب" },
@@ -695,7 +695,7 @@ function submitLead() {
 
   leadData = { name, phone, email };
   // إرسال بيانات الليد فوراً لـ Google Sheets (بدون نتائج الحاسبة بعد)
-  sendToSheets({ name, phone, email, step: 'lead', ts: new Date().toISOString() });
+
   goToStep(2);
 }
 
