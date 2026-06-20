@@ -693,9 +693,9 @@ function submitLead() {
   setErr('errEmail', 'leadEmail', !email || !email.includes('@'));
   if (!name || phone.length < 7 || !email.includes('@')) return;
 
-  leadData = { name, phone, email };
-  // إرسال بيانات الليد فوراً لـ Google Sheets (بدون نتائج الحاسبة بعد)
-
+  const rowId = 'r' + Date.now() + Math.random().toString(36).slice(2,6);
+  leadData = { name, phone, email, rowId };
+  sendToSheets({ name, phone, email, rowId, step: 'lead', ts: new Date().toISOString() });
   goToStep(2);
 }
 
@@ -785,6 +785,7 @@ function calculate() {
     insTRY: noIns ? 0 : insTRY,
     totalTRY: Math.round(totalTRY),
     totalUSD,
+    rowId: leadData.rowId,
     ts: new Date().toISOString(),
     step: 'result',
   });
@@ -820,10 +821,27 @@ window.addEventListener('DOMContentLoaded', () => {
     const ss = SpreadsheetApp.openById('1TGjXHh-g1o34IMbv7a2e5WhnTi7m98Y4UXWCLU4F2n0');
     const sheet = ss.getSheetByName('Sheet1') || ss.getActiveSheet();
     const d = JSON.parse(e.postData.contents);
-    if (sheet.getLastRow() === 0) {
-      sheet.appendRow(['الوقت','الاسم','الهاتف','الإيميل','الجنسية','الفئة العمرية','نوع الإقامة','المدة','ضريبة الإقامة','رسوم الوثيقة','رسوم التقديم','التأمين','الإجمالي TRY','الإجمالي USD','الخطوة']);
+    const HEADERS = ['الوقت','الاسم','الهاتف','البريد','الجنسية','الفئة العمرية','نوع الإقامة','المدة','ضريبة الإقامة','رسوم الوثيقة','رسوم التقديم','التأمين','الإجمالي TRY','الإجمالي USD','الخطوة','row_id'];
+    if (sheet.getLastRow() === 0) sheet.appendRow(HEADERS);
+
+    // ابحث عن الصف بالـ row_id لتحديثه بدل إضافة صف جديد
+    const rowId = d.rowId || '';
+    let targetRow = -1;
+    if (rowId) {
+      const idCol = sheet.getLastColumn(); // العمود الأخير = row_id
+      const data = sheet.getRange(2, idCol, sheet.getLastRow()).getValues();
+      for (let i = 0; i < data.length; i++) {
+        if (data[i][0] === rowId) { targetRow = i + 2; break; }
+      }
     }
-    sheet.appendRow([d.ts,d.name,d.phone,d.email,d.nationality,d.ageGroup,d.residenceType,d.duration,d.permitTRY,d.docTRY,d.appFee,d.insTRY,d.totalTRY,d.totalUSD,d.step]);
+
+    const row = [d.ts||'', d.name||'', d.phone||'', d.email||'', d.nationality||'', d.ageGroup||'', d.residenceType||'', d.duration||'', d.permitTRY||'', d.docTRY||'', d.appFee||'', d.insTRY||'', d.totalTRY||'', d.totalUSD||'', d.step||'', rowId];
+
+    if (targetRow > 0) {
+      sheet.getRange(targetRow, 1, 1, row.length).setValues([row]);
+    } else {
+      sheet.appendRow(row);
+    }
     return ContentService.createTextOutput(JSON.stringify({status:'ok'})).setMimeType(ContentService.MimeType.JSON);
   }
 
