@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T11:49:29.805981",
-  "total": 407,
+  "updated_at": "2026-06-20T11:50:56.199353",
+  "total": 404,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -5950,54 +5950,6 @@
       }
     ],
     "Najaf - Istanbul": [
-      {
-        "route": "Najaf - Istanbul",
-        "search_date": "23.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA219",
-        "from_code": "NJF",
-        "departure_time": "08:30",
-        "to_code": "IST",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "203.66",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Najaf - Istanbul",
-        "search_date": "24.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA219",
-        "from_code": "NJF",
-        "departure_time": "08:30",
-        "to_code": "IST",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "203.66",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Najaf - Istanbul",
-        "search_date": "25.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA219",
-        "from_code": "NJF",
-        "departure_time": "08:30",
-        "to_code": "IST",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "203.66",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
       {
         "route": "Najaf - Istanbul",
         "search_date": "27.06.2026",
