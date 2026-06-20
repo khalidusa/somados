@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T15:25:28.435648",
-  "total": 425,
+  "updated_at": "2026-06-20T15:27:08.644039",
+  "total": 424,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6600,22 +6600,6 @@
       }
     ],
     "Baghdad - Samsun": [
-      {
-        "route": "Baghdad - Samsun",
-        "search_date": "24.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA301",
-        "from_code": "BGW",
-        "departure_time": "10:00",
-        "to_code": "SZF",
-        "arrival_time": "12:10",
-        "duration": "",
-        "price": "268.71",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
-      },
       {
         "route": "Baghdad - Samsun",
         "search_date": "26.06.2026",
