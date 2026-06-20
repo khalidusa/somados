@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T11:55:22.966626",
+  "updated_at": "2026-06-20T11:56:59.105058",
   "total": 407,
   "routes": {
     "Istanbul - Baghdad": [
@@ -6402,11 +6402,11 @@
         "to_code": "SZF",
         "arrival_time": "12:10",
         "duration": "",
-        "price": "188.57",
+        "price": "268.71",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Baghdad - Samsun",
