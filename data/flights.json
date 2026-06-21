@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-21T12:03:10.769972",
-  "total": 305,
+  "updated_at": "2026-06-21T12:04:47.470791",
+  "total": 303,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -4658,51 +4658,19 @@
     "Erbil - Antalya": [
       {
         "route": "Erbil - Antalya",
-        "search_date": "22.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
+        "search_date": "25.06.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD771",
         "from_code": "EBL",
-        "departure_time": "09:05",
+        "departure_time": "18:30",
         "to_code": "AYT",
-        "arrival_time": "11:30",
+        "arrival_time": "20:45",
         "duration": "",
-        "price": "145.38",
+        "price": "174.4",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (P)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Erbil - Antalya",
-        "search_date": "27.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
-        "from_code": "EBL",
-        "departure_time": "22:05",
-        "to_code": "AYT",
-        "arrival_time": "00:30",
-        "duration": "",
-        "price": "145.38",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (P)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Erbil - Antalya",
-        "search_date": "29.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
-        "from_code": "EBL",
-        "departure_time": "09:05",
-        "to_code": "AYT",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "145.87",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (U)",
-        "baggage": "Hand Bag"
+        "class": "PremiumCoach (P)",
+        "baggage": "20 KG"
       }
     ],
     "Baghdad - Samsun": [],
