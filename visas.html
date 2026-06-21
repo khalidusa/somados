@@ -195,6 +195,11 @@ nav{
 .tier-price span{font-size:.65rem;font-weight:500;color:rgba(255,255,255,.4)}
 .tier-note{font-size:.65rem;color:rgba(255,255,255,.35)}
 .tier-chip.selected .tier-note{color:rgba(0,166,166,.7)}
+.tier-desc{
+  font-size:.62rem;color:rgba(255,255,255,.28);line-height:1.55;
+  margin-top:3px;padding-top:3px;border-top:1px solid rgba(255,255,255,.06);
+}
+.tier-chip.selected .tier-desc{color:rgba(0,166,166,.55);border-top-color:rgba(0,166,166,.2)}
 
 /* select prompt */
 .select-prompt{
@@ -328,8 +333,10 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'10 أيام إقامة', price:190, note:'', proc:'2-5 أيام عمل'},
-      {label:'30 يوم إقامة',  price:300, note:'', proc:'2-5 أيام عمل'},
+      {label:'إقامة 10 أيام', price:190, note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · متاحة من جميع أنحاء العالم'},
+      {label:'إقامة 30 يوم',  price:300, note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · متاحة من جميع أنحاء العالم'},
     ],
     processing:'2-5 أيام عمل',
     stay:'حسب النوع',
@@ -341,10 +348,14 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'إصدار عاجل',      price:150, note:'24 ساعة',      proc:'24 ساعة'},
-      {label:'إصدار عادي',      price:70,  note:'8-10 أيام',    proc:'8-10 أيام عمل'},
-      {label:'إصدار سريع',      price:200, note:'2-7 أيام',     proc:'2-7 أيام عمل'},
-      {label:'إصدار اقتصادي',   price:25,  note:'20-25 يوم',    proc:'20-25 يوم عمل'},
+      {label:'فورية', price:150, note:'24 ساعة', proc:'24 ساعة',
+       desc:'24 ساعة · إصدار فوري · من العراق فقط'},
+      {label:'موافقة', price:70,  note:'8-10 أيام', proc:'8-10 أيام عمل',
+       desc:'8-10 أيام عمل · موافقة رسمية · من داخل وخارج العراق'},
+      {label:'إلكترونية عاجلة', price:200, note:'2-7 أيام', proc:'2-7 أيام عمل',
+       desc:'2-7 أيام عمل · إلكترونية عاجلة · سفر من جميع أنحاء العالم'},
+      {label:'إلكترونية بطيئة', price:25,  note:'20-25 يوم', proc:'20-25 يوم عمل',
+       desc:'20-25 يوم عمل · إلكترونية بطيئة · من داخل وخارج العراق'},
     ],
     processing:'من 24 ساعة إلى 25 يوم عمل',
     stay:'-',
@@ -356,8 +367,10 @@ const VISAS = [
     type:'تأشيرة إلكترونية', typeBadge:'إلكترونية',
     tags:[],
     tiers:[
-      {label:'QR فوري',       price:230, note:'+ 30$ رسوم مطار',   proc:'24 ساعة'},
-      {label:'إلكترونية',     price:200, note:'قابلة للاسترداد',   proc:'48 ساعة'},
+      {label:'QR فوري', price:230, note:'+ 30$ رسوم مطار', proc:'24 ساعة',
+       desc:'24 ساعة · موافقة أمنية فقط · رسوم إضافية 30$ تُدفع في المطار'},
+      {label:'إلكترونية', price:200, note:'قابلة للاسترداد', proc:'48 ساعة',
+       desc:'48 ساعة · المبلغ مسترجع عند الرفض · متاحة من جميع الدول'},
     ],
     processing:'24-48 ساعة',
     stay:'-',
@@ -369,13 +382,20 @@ const VISAS = [
     type:'فيزا دبي', typeBadge:'دبي',
     tags:['gulf','express'],
     tiers:[
-      {label:'VIP 30 يوم · بالغ',      price:130, note:'إصدار 12-24 ساعة',  proc:'12-24 ساعة'},
-      {label:'عادية 30 يوم · بالغ',     price:100, note:'',                  proc:'2-5 أيام عمل'},
-      {label:'عادية 30 يوم · طفل',      price:40,  note:'',                  proc:'2-5 أيام عمل'},
-      {label:'ممتدة 60 يوم · بالغ',     price:140, note:'',                  proc:'2-5 أيام عمل'},
-      {label:'ممتدة 60 يوم · طفل',      price:50,  note:'',                  proc:'2-5 أيام عمل'},
-      {label:'متعددة 30 يوم',           price:220, note:'دخول متعدد',        proc:'2-5 أيام عمل'},
-      {label:'متعددة 60 يوم',           price:250, note:'دخول متعدد',        proc:'2-5 أيام عمل'},
+      {label:'VIP 30 يوم · بالغ', price:130, note:'إصدار 12-24 ساعة', proc:'12-24 ساعة',
+       desc:'12-24 ساعة · إصدار VIP سريع · صالحة 30 يوم'},
+      {label:'عادية 30 يوم · بالغ', price:100, note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · تأشيرة قياسية · صالحة 30 يوم'},
+      {label:'عادية 30 يوم · طفل',  price:40,  note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · للأطفال دون 18 سنة · صالحة 30 يوم'},
+      {label:'ممتدة 60 يوم · بالغ', price:140, note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · إقامة ممتدة · صالحة 60 يوم'},
+      {label:'ممتدة 60 يوم · طفل',  price:50,  note:'', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · للأطفال دون 18 سنة · صالحة 60 يوم'},
+      {label:'متعددة 30 يوم', price:220, note:'دخول متعدد', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · دخول وخروج متعدد · صالحة 30 يوم'},
+      {label:'متعددة 60 يوم', price:250, note:'دخول متعدد', proc:'2-5 أيام عمل',
+       desc:'2-5 أيام عمل · دخول وخروج متعدد · صالحة 60 يوم'},
     ],
     processing:'12 ساعة - 5 أيام عمل',
     stay:'30 أو 60 يوم',
@@ -387,7 +407,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:[],
     tiers:[
-      {label:'سياحية', price:200, note:'', proc:'5-10 أيام عمل'},
+      {label:'سياحية', price:200, note:'', proc:'5-10 أيام عمل',
+       desc:'5-10 أيام عمل · متاحة لجنسيات محددة · يرجى التواصل للتحقق'},
     ],
     processing:'5-10 أيام عمل',
     stay:'-',
@@ -399,8 +420,10 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'10 أيام إقامة', price:40,  note:'', proc:'5-8 أيام عمل'},
-      {label:'30 يوم إقامة',  price:100, note:'', proc:'5-8 أيام عمل'},
+      {label:'إقامة 10 أيام', price:40,  note:'', proc:'5-8 أيام عمل',
+       desc:'5-8 أيام عمل · إقامة قصيرة 10 أيام · من داخل وخارج العراق'},
+      {label:'إقامة 30 يوم',  price:100, note:'', proc:'5-8 أيام عمل',
+       desc:'5-8 أيام عمل · إقامة شهر كامل · من داخل وخارج العراق'},
     ],
     processing:'5-8 أيام عمل',
     stay:'10 أو 30 يوم',
@@ -412,8 +435,10 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['asia'],
     tiers:[
-      {label:'بالي (دخول مفرد)',    price:135, note:'', proc:'10 أيام عمل'},
-      {label:'جاكرتا (دخول مفرد)', price:135, note:'', proc:'10 أيام عمل'},
+      {label:'بالي', price:135, note:'دخول مفرد', proc:'10 أيام عمل',
+       desc:'10 أيام عمل · دخول مفرد · للسفر إلى جزيرة بالي'},
+      {label:'جاكرتا', price:135, note:'دخول مفرد', proc:'10 أيام عمل',
+       desc:'10 أيام عمل · دخول مفرد · للسفر إلى جاكرتا والمدن الأخرى'},
     ],
     processing:'10 أيام عمل',
     stay:'دخول مفرد',
@@ -425,7 +450,8 @@ const VISAS = [
     type:'تأشيرة تجارية', typeBadge:'تجارية',
     tags:['asia'],
     tiers:[
-      {label:'تجارية', price:150, note:'', proc:'7 أيام عمل'},
+      {label:'تجارية', price:150, note:'', proc:'7 أيام عمل',
+       desc:'7 أيام عمل · للأغراض التجارية · المبلغ مسترجع عند الرفض'},
     ],
     processing:'7 أيام عمل',
     stay:'-',
@@ -437,7 +463,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:[],
     tiers:[
-      {label:'سياحية', price:390, note:'', proc:'7-15 يوم عمل'},
+      {label:'سياحية', price:390, note:'', proc:'7-15 يوم عمل',
+       desc:'7-15 يوم عمل · متاحة عبر شركات الطيران العراقية فقط'},
     ],
     processing:'7-15 يوم عمل',
     stay:'-',
@@ -449,7 +476,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['asia'],
     tiers:[
-      {label:'سياحية', price:85, note:'', proc:'7 أيام عمل'},
+      {label:'سياحية', price:85, note:'', proc:'7 أيام عمل',
+       desc:'7 أيام عمل · متاحة من جميع أنحاء العالم · غير مسترجعة'},
     ],
     processing:'7 أيام عمل',
     stay:'-',
@@ -471,6 +499,7 @@ function buildCard(visa, delay) {
       <span class="tier-label">${t.label}</span>
       <span class="tier-price">$${t.price}<span> USD</span></span>
       ${t.note ? `<span class="tier-note">${t.note}</span>` : ''}
+      ${t.desc ? `<span class="tier-desc">${t.desc}</span>` : ''}
     </div>
   `).join('');
 
@@ -588,5 +617,27 @@ function renderVisas() {
 
 renderVisas();
 </script>
+
+<!-- ══ FOOTER ══ -->
+<footer style="background:#101010;border-top:1px solid rgba(255,255,255,.07);padding:2.5rem 2.5rem 1.5rem;margin-top:4rem">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.07)">
+      <div style="display:flex;gap:2rem;flex-wrap:wrap">
+        <a href="index.html" style="color:rgba(255,255,255,.45);font-size:.85rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.45)'">الرئيسية</a>
+        <a href="visas.html" style="color:rgba(255,255,255,.45);font-size:.85rem;text-decoration:none" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.45)'">التأشيرات</a>
+        <a href="ikamet-turkiye.html" style="color:rgba(255,255,255,.45);font-size:.85rem;text-decoration:none" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.45)'">الإقامة التركية</a>
+      </div>
+      <div style="display:flex;gap:.6rem">
+        <a href="https://www.instagram.com/somadoscom/" target="_blank" rel="noopener" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:#181818;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);text-decoration:none;transition:all .25s" onmouseover="this.style.borderColor='#00a6a6';this.style.color='#00a6a6'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.4)'">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/somadoscom" target="_blank" rel="noopener" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:#181818;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);text-decoration:none;transition:all .25s" onmouseover="this.style.borderColor='#00a6a6';this.style.color='#00a6a6'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.4)'">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,.18);font-size:.78rem;margin-top:1.2rem;text-align:center">© 2025 سومادوس — جميع الحقوق محفوظة</p>
+  </div>
+</footer>
 </body>
 </html>
