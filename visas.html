@@ -174,16 +174,40 @@ nav{
   display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem;
 }
 .tier-chip{
-  background:var(--bg4);border:1px solid var(--border);border-radius:10px;
-  padding:.5rem .9rem;flex:1;min-width:90px;
+  background:var(--bg4);border:1.5px solid var(--border);border-radius:10px;
+  padding:.5rem .9rem;flex:1;min-width:100px;
   display:flex;flex-direction:column;gap:.15rem;
-  transition:border-color .2s;
+  transition:all .2s;cursor:pointer;user-select:none;
+  position:relative;
 }
-.visa-card:hover .tier-chip{border-color:rgba(0,166,166,.15)}
+.tier-chip:hover{border-color:rgba(0,166,166,.35);background:rgba(0,166,166,.06)}
+.tier-chip.selected{
+  border-color:var(--teal);background:rgba(0,166,166,.12);
+  box-shadow:0 0 0 1px rgba(0,166,166,.3);
+}
+.tier-chip.selected::after{
+  content:'';position:absolute;top:6px;left:6px;
+  width:7px;height:7px;border-radius:50%;background:var(--teal);
+}
 .tier-label{font-size:.65rem;font-weight:600;color:rgba(255,255,255,.35);letter-spacing:.04em;text-transform:uppercase}
+.tier-chip.selected .tier-label{color:var(--teal)}
 .tier-price{font-size:1.2rem;font-weight:900;color:var(--teal);letter-spacing:-.01em}
 .tier-price span{font-size:.65rem;font-weight:500;color:rgba(255,255,255,.4)}
-.tier-note{font-size:.65rem;color:rgba(255,255,255,.3)}
+.tier-note{font-size:.65rem;color:rgba(255,255,255,.35)}
+.tier-chip.selected .tier-note{color:rgba(0,166,166,.7)}
+
+/* select prompt */
+.select-prompt{
+  font-size:.72rem;color:rgba(255,255,255,.3);
+  margin-bottom:.7rem;display:flex;align-items:center;gap:.35rem;
+}
+.select-prompt svg{width:11px;height:11px;fill:rgba(0,166,166,.5);flex-shrink:0}
+
+/* wa-btn disabled */
+.wa-btn.disabled{
+  background:var(--bg4);color:rgba(255,255,255,.3);
+  box-shadow:none;cursor:not-allowed;pointer-events:none;
+}
 
 /* meta row */
 .card-meta{
@@ -436,31 +460,31 @@ const VISAS = [
 
 let currentFilter = 'all';
 
-function waLink(visa, tier) {
-  const msg = `مرحباً، أرغب بالتقديم لفيزا ${visa.country} - ${tier.label} - مدة الإصدار ${visa.processing} - السعر ${tier.price}$. يرجى تزويدي بالتفاصيل.`;
-  return `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
-}
+
 
 function buildCard(visa, delay) {
   const minPrice = Math.min(...visa.tiers.map(t=>t.price));
-  const maxPrice = Math.max(...visa.tiers.map(t=>t.price));
-  const priceRange = minPrice === maxPrice ? `$${minPrice}` : `$${minPrice} - $${maxPrice}`;
+  const cardId = 'card-' + visa.id;
 
-  const tiersHTML = visa.tiers.map(t => `
-    <div class="tier-chip">
+  const tiersHTML = visa.tiers.map((t, i) => `
+    <div class="tier-chip" onclick="selectTier('${visa.id}', ${i})" data-idx="${i}">
       <span class="tier-label">${t.label}</span>
       <span class="tier-price">$${t.price}<span> USD</span></span>
       ${t.note ? `<span class="tier-note">${t.note}</span>` : ''}
     </div>
   `).join('');
 
-  const waHref = waLink(visa, visa.tiers[0]);
-
   const card = document.createElement('div');
   card.className = 'visa-card';
+  card.id = cardId;
   card.dataset.tags = (visa.tags || []).join(',') + (visa.express ? ',express' : '');
   card.dataset.price = minPrice;
+  card.dataset.visaid = visa.id;
   card.style.animationDelay = delay + 'ms';
+
+  const reqText = visa.notes
+    ? visa.notes.replace(/جواز ممسوح ضوئياً (صورة)/g, 'جواز ممسوح ضوئياً (صورة)')
+    : '';
 
   card.innerHTML = `
     <div class="card-strip"></div>
@@ -476,6 +500,10 @@ function buildCard(visa, delay) {
         </div>
       </div>
 
+      <div class="select-prompt">
+        ${ICONS.clock}
+        اختر نوع التأشيرة للمتابعة
+      </div>
       <div class="tiers">${tiersHTML}</div>
 
       <div class="card-meta">
@@ -486,23 +514,40 @@ function buildCard(visa, delay) {
         ${visa.stay && visa.stay !== '-' ? `<div class="meta-item">${ICONS.stay}<span>مدة الإقامة: <strong>${visa.stay}</strong></span></div>` : ''}
       </div>
 
-      ${visa.notes ? `
+      ${reqText ? `
       <button class="card-notes-toggle" onclick="toggleNotes(this)" aria-expanded="false">
         ${ICONS.warn}
         ملاحظات مهمة
         ${ICONS.chevron}
       </button>
-      <div class="card-notes">${visa.notes}</div>
+      <div class="card-notes">${reqText}</div>
       ` : ''}
     </div>
     <div class="card-footer">
-      <a class="wa-btn" href="${waHref}" target="_blank" rel="noopener" aria-label="اطلب تأشيرة ${visa.country} عبر واتساب">
+      <a class="wa-btn disabled" id="wa-${visa.id}" href="#" target="_blank" rel="noopener"
+         aria-label="اطلب تأشيرة ${visa.country} عبر واتساب" aria-disabled="true">
         ${WA_SVG}
-        اطلبها الآن
+        اختر نوعاً أولاً
       </a>
     </div>
   `;
   return card;
+}
+
+function selectTier(visaId, idx) {
+  const visa = VISAS.find(v => v.id === visaId);
+  if (!visa) return;
+  const tier = visa.tiers[idx];
+  const card = document.getElementById('card-' + visaId);
+  // highlight selected
+  card.querySelectorAll('.tier-chip').forEach((c,i) => c.classList.toggle('selected', i === idx));
+  // build wa link
+  const msg = `مرحباً، أرغب بالتقديم لتأشيرة ${visa.country} - ${tier.label} - مدة الإصدار: ${visa.processing} - السعر: ${tier.price}$. يرجى تزويدي بالتفاصيل والمتطلبات.`;
+  const btn = document.getElementById('wa-' + visaId);
+  btn.href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+  btn.classList.remove('disabled');
+  btn.removeAttribute('aria-disabled');
+  btn.innerHTML = WA_SVG + ` اطلب: ${visa.country} · ${tier.label} · $${tier.price}`;
 }
 
 function toggleNotes(btn) {
