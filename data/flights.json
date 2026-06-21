@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T15:18:22.562745",
+  "updated_at": "2026-06-21T15:18:43.743882",
   "total": 220,
   "routes": {
     "Istanbul - Baghdad": [
@@ -3415,11 +3415,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -3431,11 +3431,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -3447,11 +3447,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -3463,11 +3463,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -3491,9 +3491,9 @@
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "09:00",
+        "departure_time": "16:20",
         "to_code": "ESB",
-        "arrival_time": "11:00",
+        "arrival_time": "18:30",
         "duration": "",
         "price": "294.17",
         "currency": "USD",
@@ -3507,9 +3507,9 @@
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "09:00",
+        "departure_time": "16:20",
         "to_code": "ESB",
-        "arrival_time": "11:00",
+        "arrival_time": "18:30",
         "duration": "",
         "price": "294.17",
         "currency": "USD",
@@ -3539,9 +3539,9 @@
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "09:00",
+        "departure_time": "16:20",
         "to_code": "ESB",
-        "arrival_time": "11:00",
+        "arrival_time": "18:30",
         "duration": "",
         "price": "294.17",
         "currency": "USD",
