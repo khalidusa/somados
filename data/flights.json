@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-21T12:00:23.459448",
-  "total": 296,
+  "updated_at": "2026-06-21T12:01:48.490741",
+  "total": 299,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -4507,7 +4507,56 @@
         "baggage": "30 KG"
       }
     ],
-    "Sulaymaniyah - Istanbul": [],
+    "Sulaymaniyah - Istanbul": [
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "23.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA225",
+        "from_code": "ISU",
+        "departure_time": "08:30",
+        "to_code": "IST",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "259.29",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA225",
+        "from_code": "ISU",
+        "departure_time": "08:30",
+        "to_code": "IST",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "259.29",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "30.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA225",
+        "from_code": "ISU",
+        "departure_time": "08:30",
+        "to_code": "IST",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "259.29",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      }
+    ],
     "Baghdad - Antalya": [],
     "Erbil - Antalya": [
       {
