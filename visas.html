@@ -328,8 +328,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'10 أيام', price:190, note:''},
-      {label:'30 يوم', price:300, note:''},
+      {label:'10 أيام إقامة', price:190, note:'', proc:'2-5 أيام عمل'},
+      {label:'30 يوم إقامة',  price:300, note:'', proc:'2-5 أيام عمل'},
     ],
     processing:'2-5 أيام عمل',
     stay:'حسب النوع',
@@ -341,14 +341,14 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'24 ساعة', price:150, note:'إصدار عاجل'},
-      {label:'8-10 أيام', price:70, note:''},
-      {label:'2-7 أيام', price:200, note:'معالجة سريعة'},
-      {label:'20-25 يوم', price:25, note:''},
+      {label:'إصدار عاجل',      price:150, note:'24 ساعة',      proc:'24 ساعة'},
+      {label:'إصدار عادي',      price:70,  note:'8-10 أيام',    proc:'8-10 أيام عمل'},
+      {label:'إصدار سريع',      price:200, note:'2-7 أيام',     proc:'2-7 أيام عمل'},
+      {label:'إصدار اقتصادي',   price:25,  note:'20-25 يوم',    proc:'20-25 يوم عمل'},
     ],
     processing:'من 24 ساعة إلى 25 يوم عمل',
     stay:'-',
-    notes:'المبلغ غير مسترجع في حال الرفض. المتطلبات: ماسح جواز السفر.',
+    notes:'المبلغ غير مسترجع في حال الرفض. المتطلبات: جواز ممسوح ضوئياً (صورة).',
     express:true,
   },
   {
@@ -356,8 +356,8 @@ const VISAS = [
     type:'تأشيرة إلكترونية', typeBadge:'إلكترونية',
     tags:[],
     tiers:[
-      {label:'QR فوري (24 ساعة)', price:230, note:'+ 30$ رسوم مطار'},
-      {label:'إلكترونية (48 ساعة)', price:200, note:'قابلة للاسترداد'},
+      {label:'QR فوري',       price:230, note:'+ 30$ رسوم مطار',   proc:'24 ساعة'},
+      {label:'إلكترونية',     price:200, note:'قابلة للاسترداد',   proc:'48 ساعة'},
     ],
     processing:'24-48 ساعة',
     stay:'-',
@@ -369,13 +369,13 @@ const VISAS = [
     type:'فيزا دبي', typeBadge:'دبي',
     tags:['gulf','express'],
     tiers:[
-      {label:'VIP 30 يوم', price:130, note:'12-24 ساعة · بالغ'},
-      {label:'عادية 30 يوم', price:100, note:'2-5 أيام · بالغ'},
-      {label:'عادية 30 يوم', price:40, note:'طفل'},
-      {label:'ممتدة 60 يوم', price:140, note:'بالغ'},
-      {label:'ممتدة 60 يوم', price:50, note:'طفل'},
-      {label:'متعددة 30 يوم', price:220, note:'دخول متعدد'},
-      {label:'متعددة 60 يوم', price:250, note:'دخول متعدد'},
+      {label:'VIP 30 يوم · بالغ',      price:130, note:'إصدار 12-24 ساعة',  proc:'12-24 ساعة'},
+      {label:'عادية 30 يوم · بالغ',     price:100, note:'',                  proc:'2-5 أيام عمل'},
+      {label:'عادية 30 يوم · طفل',      price:40,  note:'',                  proc:'2-5 أيام عمل'},
+      {label:'ممتدة 60 يوم · بالغ',     price:140, note:'',                  proc:'2-5 أيام عمل'},
+      {label:'ممتدة 60 يوم · طفل',      price:50,  note:'',                  proc:'2-5 أيام عمل'},
+      {label:'متعددة 30 يوم',           price:220, note:'دخول متعدد',        proc:'2-5 أيام عمل'},
+      {label:'متعددة 60 يوم',           price:250, note:'دخول متعدد',        proc:'2-5 أيام عمل'},
     ],
     processing:'12 ساعة - 5 أيام عمل',
     stay:'30 أو 60 يوم',
@@ -387,7 +387,7 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:[],
     tiers:[
-      {label:'سياحية', price:200, note:'5-10 أيام عمل'},
+      {label:'سياحية', price:200, note:'', proc:'5-10 أيام عمل'},
     ],
     processing:'5-10 أيام عمل',
     stay:'-',
@@ -399,8 +399,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['gulf'],
     tiers:[
-      {label:'10 أيام', price:40, note:'5-8 أيام عمل'},
-      {label:'30 يوم', price:100, note:''},
+      {label:'10 أيام إقامة', price:40,  note:'', proc:'5-8 أيام عمل'},
+      {label:'30 يوم إقامة',  price:100, note:'', proc:'5-8 أيام عمل'},
     ],
     processing:'5-8 أيام عمل',
     stay:'10 أو 30 يوم',
@@ -412,8 +412,8 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['asia'],
     tiers:[
-      {label:'بالي', price:135, note:'دخول مفرد'},
-      {label:'جاكرتا', price:135, note:'دخول مفرد'},
+      {label:'بالي (دخول مفرد)',    price:135, note:'', proc:'10 أيام عمل'},
+      {label:'جاكرتا (دخول مفرد)', price:135, note:'', proc:'10 أيام عمل'},
     ],
     processing:'10 أيام عمل',
     stay:'دخول مفرد',
@@ -425,7 +425,7 @@ const VISAS = [
     type:'تأشيرة تجارية', typeBadge:'تجارية',
     tags:['asia'],
     tiers:[
-      {label:'تجارية', price:150, note:'7 أيام عمل'},
+      {label:'تجارية', price:150, note:'', proc:'7 أيام عمل'},
     ],
     processing:'7 أيام عمل',
     stay:'-',
@@ -437,7 +437,7 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:[],
     tiers:[
-      {label:'سياحية', price:390, note:'7-15 يوم عمل'},
+      {label:'سياحية', price:390, note:'', proc:'7-15 يوم عمل'},
     ],
     processing:'7-15 يوم عمل',
     stay:'-',
@@ -449,7 +449,7 @@ const VISAS = [
     type:'تأشيرة سياحية', typeBadge:'سياحية',
     tags:['asia'],
     tiers:[
-      {label:'سياحية', price:85, note:'7 أيام عمل'},
+      {label:'سياحية', price:85, note:'', proc:'7 أيام عمل'},
     ],
     processing:'7 أيام عمل',
     stay:'-',
@@ -542,7 +542,7 @@ function selectTier(visaId, idx) {
   // highlight selected
   card.querySelectorAll('.tier-chip').forEach((c,i) => c.classList.toggle('selected', i === idx));
   // build wa link
-  const msg = `مرحباً، أرغب بالتقديم لتأشيرة ${visa.country} - ${tier.label} - مدة الإصدار: ${visa.processing} - السعر: ${tier.price}$. يرجى تزويدي بالتفاصيل والمتطلبات.`;
+  const msg = `مرحباً، أرغب بالتقديم لتأشيرة ${visa.country} - ${tier.label} - مدة الإصدار: ${tier.proc} - السعر: ${tier.price}$. يرجى تزويدي بالتفاصيل والمتطلبات.`;
   const btn = document.getElementById('wa-' + visaId);
   btn.href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
   btn.classList.remove('disabled');
