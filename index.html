@@ -875,15 +875,15 @@ function showFlights(routeKey, fromAr, toAr, fromCode, toCode) {
   document.getElementById('flights-sub').textContent = 'رحلات مباشرة · أسعار تشمل رسوم الوكالة';
 
   const allFlights = (flightsData.routes && flightsData.routes[routeKey]) || [];
-  // مطارات متعددة لنفس المدينة
-  const AIRPORT_ALIASES2 = {'IST':['IST','SAW'], 'SAW':['IST','SAW']};
-  const flights = (fromCode && toCode)
-    ? allFlights.filter(f => {
-        const fc2 = AIRPORT_ALIASES2[fromCode] || [fromCode];
-        const tc2 = AIRPORT_ALIASES2[toCode]   || [toCode];
-        return fc2.includes(f.from_code) && tc2.includes(f.to_code);
-      })
-    : allFlights;
+  // dedup: same airline + flight_number + departure_time → keep cheapest
+  const dedupMap = {};
+  allFlights.forEach(f => {
+    const key = (f.airline||'') + '|' + (f.flight_number||'') + '|' + (f.departure_time||'') + '|' + (f.search_date||'');
+    if (!dedupMap[key] || parseFloat(f.price||9999) < parseFloat(dedupMap[key].price||9999)) {
+      dedupMap[key] = f;
+    }
+  });
+  const flights = Object.values(dedupMap);
   const tabs = document.getElementById('date-tabs');
   const list = document.getElementById('flights-list');
 
