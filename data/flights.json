@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T09:10:23.812004",
-  "total": 409,
+  "updated_at": "2026-06-22T09:11:38.878598",
+  "total": 408,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6265,6 +6265,22 @@
       {
         "route": "Erbil - Antalya",
         "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1831",
+        "from_code": "EBL",
+        "departure_time": "09:05",
+        "to_code": "AYT",
+        "arrival_time": "11:30",
+        "duration": "",
+        "price": "146.33",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Erbil - Antalya",
+        "search_date": "25.06.2026",
         "airline": "UR Airlines",
         "flight_number": "UD771",
         "from_code": "EBL",
@@ -6280,38 +6296,6 @@
       },
       {
         "route": "Erbil - Antalya",
-        "search_date": "25.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
-        "from_code": "EBL",
-        "departure_time": "09:05",
-        "to_code": "AYT",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "189.41",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (T)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Erbil - Antalya",
-        "search_date": "27.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
-        "from_code": "EBL",
-        "departure_time": "22:05",
-        "to_code": "AYT",
-        "arrival_time": "00:30",
-        "duration": "",
-        "price": "145.38",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (P)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Erbil - Antalya",
         "search_date": "29.06.2026",
         "airline": "Pegasus Airlines",
         "flight_number": "PC1831",
@@ -6320,10 +6304,10 @@
         "to_code": "AYT",
         "arrival_time": "11:30",
         "duration": "",
-        "price": "145.38",
+        "price": "145.87",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (P)",
+        "class": "Economy (U)",
         "baggage": "Hand Bag"
       }
     ],
