@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T09:09:26.522318",
-  "total": 410,
+  "updated_at": "2026-06-22T09:10:23.812004",
+  "total": 409,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6166,39 +6166,7 @@
     "Baghdad - Antalya": [
       {
         "route": "Baghdad - Antalya",
-        "search_date": "22.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA209",
-        "from_code": "BGW",
-        "departure_time": "18:00",
-        "to_code": "AYT",
-        "arrival_time": "20:30",
-        "duration": "",
-        "price": "230.06",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Antalya",
         "search_date": "23.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA209",
-        "from_code": "BGW",
-        "departure_time": "18:00",
-        "to_code": "AYT",
-        "arrival_time": "20:30",
-        "duration": "",
-        "price": "230.06",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Baghdad - Antalya",
-        "search_date": "24.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA209",
         "from_code": "BGW",
@@ -6263,6 +6231,22 @@
       {
         "route": "Baghdad - Antalya",
         "search_date": "28.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA209",
+        "from_code": "BGW",
+        "departure_time": "18:00",
+        "to_code": "AYT",
+        "arrival_time": "20:30",
+        "duration": "",
+        "price": "230.06",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Antalya",
+        "search_date": "30.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA209",
         "from_code": "BGW",
