@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T20:02:08.096379",
+  "updated_at": "2026-06-21T20:02:57.807589",
   "total": 418,
   "routes": {
     "Istanbul - Baghdad": [
@@ -1791,10 +1791,10 @@
         "to_code": "EBL",
         "arrival_time": "00:50",
         "duration": "",
-        "price": "212.26",
+        "price": "248.05",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Z)",
+        "class": "Economy (V)",
         "baggage": "Hand Bag"
       },
       {
