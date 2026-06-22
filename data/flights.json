@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-21T20:25:05.857603",
-  "total": 419,
+  "updated_at": "2026-06-21T20:26:17.647632",
+  "total": 418,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -6422,22 +6422,6 @@
       }
     ],
     "Erbil - Antalya": [
-      {
-        "route": "Erbil - Antalya",
-        "search_date": "22.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1831",
-        "from_code": "EBL",
-        "departure_time": "09:05",
-        "to_code": "AYT",
-        "arrival_time": "11:30",
-        "duration": "",
-        "price": "149.62",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (P)",
-        "baggage": "Hand Bag"
-      },
       {
         "route": "Erbil - Antalya",
         "search_date": "25.06.2026",
