@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T09:00:07.330376",
-  "total": 423,
+  "updated_at": "2026-06-22T09:01:40.583193",
+  "total": 422,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -3128,38 +3128,6 @@
     "Ankara - Kirkuk": [
       {
         "route": "Ankara - Kirkuk",
-        "search_date": "22.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA248",
-        "from_code": "ESB",
-        "departure_time": "19:30",
-        "to_code": "KIK",
-        "arrival_time": "21:30",
-        "duration": "",
-        "price": "296.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Ankara - Kirkuk",
-        "search_date": "23.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA248",
-        "from_code": "ESB",
-        "departure_time": "19:30",
-        "to_code": "KIK",
-        "arrival_time": "21:30",
-        "duration": "",
-        "price": "296.03",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Ankara - Kirkuk",
         "search_date": "24.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA248",
@@ -3279,6 +3247,22 @@
         "departure_time": "19:30",
         "to_code": "KIK",
         "arrival_time": "21:30",
+        "duration": "",
+        "price": "296.03",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Ankara - Kirkuk",
+        "search_date": "02.07.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA248",
+        "from_code": "ESB",
+        "departure_time": "12:00",
+        "to_code": "KIK",
+        "arrival_time": "14:00",
         "duration": "",
         "price": "296.03",
         "currency": "USD",
