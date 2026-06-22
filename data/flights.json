@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T08:53:53.689604",
-  "total": 422,
+  "updated_at": "2026-06-22T08:54:52.131916",
+  "total": 425,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2908,6 +2908,54 @@
         "seats_available": "9",
         "class": "Economy (Y)",
         "baggage": "30 KG"
+      },
+      {
+        "route": "Istanbul - Sulaymaniyah",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
+        "to_code": "ISU",
+        "arrival_time": "01:40",
+        "duration": "",
+        "price": "151.19",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Sulaymaniyah",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
+        "to_code": "ISU",
+        "arrival_time": "01:40",
+        "duration": "",
+        "price": "7320.84",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Sulaymaniyah",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
+        "to_code": "ISU",
+        "arrival_time": "01:40",
+        "duration": "",
+        "price": "164.35",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
       }
     ],
     "Antalya - Baghdad": [],
