@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T13:43:56.368418",
-  "total": 399,
+  "updated_at": "2026-06-22T13:44:55.644677",
+  "total": 397,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2899,22 +2899,6 @@
       {
         "route": "Antalya - Erbil",
         "search_date": "25.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1830",
-        "from_code": "AYT",
-        "departure_time": "05:55",
-        "to_code": "EBL",
-        "arrival_time": "08:05",
-        "duration": "",
-        "price": "142.73",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (P)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Antalya - Erbil",
-        "search_date": "25.06.2026",
         "airline": "UR Airlines",
         "flight_number": "UD772",
         "from_code": "AYT",
@@ -2930,35 +2914,19 @@
       },
       {
         "route": "Antalya - Erbil",
-        "search_date": "27.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1830",
+        "search_date": "02.07.2026",
+        "airline": "UR Airlines",
+        "flight_number": "UD772",
         "from_code": "AYT",
-        "departure_time": "18:55",
+        "departure_time": "21:45",
         "to_code": "EBL",
-        "arrival_time": "21:05",
+        "arrival_time": "00:00",
         "duration": "",
-        "price": "162.38",
+        "price": "302.8",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (U)",
-        "baggage": "Hand Bag"
-      },
-      {
-        "route": "Antalya - Erbil",
-        "search_date": "29.06.2026",
-        "airline": "Pegasus Airlines",
-        "flight_number": "PC1830",
-        "from_code": "AYT",
-        "departure_time": "05:55",
-        "to_code": "EBL",
-        "arrival_time": "08:05",
-        "duration": "",
-        "price": "161.55",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (U)",
-        "baggage": "Hand Bag"
+        "class": "PremiumCoach (Q)",
+        "baggage": "20 KG"
       }
     ],
     "Samsun - Baghdad": [
