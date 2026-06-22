@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-22T13:44:55.644677",
-  "total": 397,
+  "updated_at": "2026-06-22T13:46:44.737792",
+  "total": 398,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2949,6 +2949,22 @@
       {
         "route": "Samsun - Baghdad",
         "search_date": "26.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.55",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "27.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA302",
         "from_code": "SZF",
