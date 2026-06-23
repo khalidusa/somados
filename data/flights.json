@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T12:58:51.273922",
-  "total": 307,
+  "updated_at": "2026-06-23T13:00:31.562336",
+  "total": 309,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -4759,6 +4759,38 @@
       {
         "route": "Baghdad - Antalya",
         "search_date": "25.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA209",
+        "from_code": "BGW",
+        "departure_time": "18:00",
+        "to_code": "AYT",
+        "arrival_time": "20:30",
+        "duration": "",
+        "price": "230.06",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Antalya",
+        "search_date": "27.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA209",
+        "from_code": "BGW",
+        "departure_time": "17:00",
+        "to_code": "AYT",
+        "arrival_time": "19:30",
+        "duration": "",
+        "price": "230.06",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Baghdad - Antalya",
+        "search_date": "28.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA209",
         "from_code": "BGW",
