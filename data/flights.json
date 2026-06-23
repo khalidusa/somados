@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T09:26:03.852013",
-  "total": 357,
+  "updated_at": "2026-06-23T09:27:07.101267",
+  "total": 359,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -5475,22 +5475,6 @@
     "Sulaymaniyah - Istanbul": [
       {
         "route": "Sulaymaniyah - Istanbul",
-        "search_date": "23.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA225",
-        "from_code": "ISU",
-        "departure_time": "08:30",
-        "to_code": "IST",
-        "arrival_time": "11:00",
-        "duration": "",
-        "price": "259.29",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Sulaymaniyah - Istanbul",
         "search_date": "27.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA225",
@@ -5520,6 +5504,54 @@
         "seats_available": "9",
         "class": "Economy (Y)",
         "baggage": "30 KG"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "03.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF374",
+        "from_code": "ISU",
+        "departure_time": "03:05",
+        "to_code": "SAW",
+        "arrival_time": "05:50",
+        "duration": "",
+        "price": "7391.7",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "03.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF374",
+        "from_code": "ISU",
+        "departure_time": "03:05",
+        "to_code": "SAW",
+        "arrival_time": "05:50",
+        "duration": "",
+        "price": "165.85",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "03.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF374",
+        "from_code": "ISU",
+        "departure_time": "03:05",
+        "to_code": "SAW",
+        "arrival_time": "05:50",
+        "duration": "",
+        "price": "254.29",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
       }
     ],
     "Baghdad - Antalya": [
