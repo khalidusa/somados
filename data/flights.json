@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T09:13:17.285910",
-  "total": 335,
+  "updated_at": "2026-06-23T09:14:24.990944",
+  "total": 339,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2179,6 +2179,22 @@
       {
         "route": "Antalya - Erbil",
         "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1830",
+        "from_code": "AYT",
+        "departure_time": "05:55",
+        "to_code": "EBL",
+        "arrival_time": "08:05",
+        "duration": "",
+        "price": "144.08",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "25.06.2026",
         "airline": "UR Airlines",
         "flight_number": "UD772",
         "from_code": "AYT",
@@ -2194,6 +2210,54 @@
       },
       {
         "route": "Antalya - Erbil",
+        "search_date": "27.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1830",
+        "from_code": "AYT",
+        "departure_time": "18:55",
+        "to_code": "EBL",
+        "arrival_time": "21:05",
+        "duration": "",
+        "price": "162.39",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "29.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1830",
+        "from_code": "AYT",
+        "departure_time": "05:55",
+        "to_code": "EBL",
+        "arrival_time": "08:05",
+        "duration": "",
+        "price": "173.15",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
+        "search_date": "02.07.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1830",
+        "from_code": "AYT",
+        "departure_time": "05:55",
+        "to_code": "EBL",
+        "arrival_time": "08:05",
+        "duration": "",
+        "price": "176.9",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (T)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Antalya - Erbil",
         "search_date": "02.07.2026",
         "airline": "UR Airlines",
         "flight_number": "UD772",
@@ -2202,10 +2266,10 @@
         "to_code": "EBL",
         "arrival_time": "00:00",
         "duration": "",
-        "price": "302.8",
+        "price": "270.7",
         "currency": "USD",
         "seats_available": "9",
-        "class": "PremiumCoach (Q)",
+        "class": "PremiumCoach (T)",
         "baggage": "20 KG"
       }
     ],
