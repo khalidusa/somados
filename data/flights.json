@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T12:39:35.786078",
-  "total": 389,
+  "updated_at": "2026-06-23T12:41:21.306128",
+  "total": 388,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2564,22 +2564,6 @@
         "departure_time": "12:40",
         "to_code": "KIK",
         "arrival_time": "15:20",
-        "duration": "",
-        "price": "384.11",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Istanbul - Kirkuk",
-        "search_date": "02.07.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA254",
-        "from_code": "IST",
-        "departure_time": "05:15",
-        "to_code": "KIK",
-        "arrival_time": "08:00",
         "duration": "",
         "price": "384.11",
         "currency": "USD",
