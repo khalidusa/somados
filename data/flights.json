@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T13:05:31.910321",
+  "updated_at": "2026-06-23T13:07:39.914347",
   "total": 311,
   "routes": {
     "Istanbul - Baghdad": [
@@ -4941,7 +4941,7 @@
     "Kirkuk - Ankara": [
       {
         "route": "Kirkuk - Ankara",
-        "search_date": "26.06.2026",
+        "search_date": "29.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
@@ -4949,27 +4949,27 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
-        "search_date": "27.06.2026",
+        "search_date": "30.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "16:20",
+        "departure_time": "09:00",
         "to_code": "ESB",
-        "arrival_time": "18:30",
+        "arrival_time": "11:00",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -4981,11 +4981,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -5013,11 +5013,11 @@
         "to_code": "ESB",
         "arrival_time": "18:30",
         "duration": "",
-        "price": "201.77",
+        "price": "294.17",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       }
     ]
   }
