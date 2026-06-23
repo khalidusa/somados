@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T12:52:17.347401",
-  "total": 313,
+  "updated_at": "2026-06-23T12:53:21.029271",
+  "total": 314,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -4543,6 +4543,22 @@
       {
         "route": "Basra - Istanbul",
         "search_date": "24.06.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA221",
+        "from_code": "BSR",
+        "departure_time": "14:45",
+        "to_code": "IST",
+        "arrival_time": "18:00",
+        "duration": "",
+        "price": "264.0",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Basra - Istanbul",
+        "search_date": "26.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA221",
         "from_code": "BSR",
