@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T12:41:21.306128",
+  "updated_at": "2026-06-23T12:42:15.119147",
   "total": 388,
   "routes": {
     "Istanbul - Baghdad": [
@@ -2631,7 +2631,7 @@
         "to_code": "ISU",
         "arrival_time": "01:40",
         "duration": "",
-        "price": "151.16",
+        "price": "151.17",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
@@ -2647,7 +2647,7 @@
         "to_code": "ISU",
         "arrival_time": "01:40",
         "duration": "",
-        "price": "7323.22",
+        "price": "7323.21",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
