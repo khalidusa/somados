@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T09:45:40.332109",
-  "total": 373,
+  "updated_at": "2026-06-24T09:47:12.230935",
+  "total": 375,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -5886,6 +5886,22 @@
     "Kirkuk - Ankara": [
       {
         "route": "Kirkuk - Ankara",
+        "search_date": "25.06.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "20:25",
+        "to_code": "ESB",
+        "arrival_time": "22:40",
+        "duration": "",
+        "price": "263.59",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (X)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Kirkuk - Ankara",
         "search_date": "26.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
@@ -5906,9 +5922,9 @@
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "16:20",
+        "departure_time": "09:00",
         "to_code": "ESB",
-        "arrival_time": "18:30",
+        "arrival_time": "11:00",
         "duration": "",
         "price": "201.77",
         "currency": "USD",
@@ -5922,9 +5938,9 @@
         "airline": "Iraqi Airways",
         "flight_number": "IA247",
         "from_code": "KIK",
-        "departure_time": "16:20",
+        "departure_time": "09:00",
         "to_code": "ESB",
-        "arrival_time": "18:30",
+        "arrival_time": "11:00",
         "duration": "",
         "price": "201.77",
         "currency": "USD",
@@ -5958,11 +5974,11 @@
         "to_code": "ESB",
         "arrival_time": "11:00",
         "duration": "",
-        "price": "294.17",
+        "price": "201.77",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Business (J)",
-        "baggage": "40 KG"
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
       },
       {
         "route": "Kirkuk - Ankara",
@@ -6011,6 +6027,22 @@
         "seats_available": "9",
         "class": "Business (J)",
         "baggage": "40 KG"
+      },
+      {
+        "route": "Kirkuk - Ankara",
+        "search_date": "04.07.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA247",
+        "from_code": "KIK",
+        "departure_time": "09:00",
+        "to_code": "ESB",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "201.77",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
       }
     ]
   }
