@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T13:22:38.033818",
-  "total": 383,
+  "updated_at": "2026-06-24T13:23:58.433519",
+  "total": 385,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2159,7 +2159,7 @@
     "Istanbul - Sulaymaniyah": [
       {
         "route": "Istanbul - Sulaymaniyah",
-        "search_date": "27.06.2026",
+        "search_date": "30.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA226",
         "from_code": "IST",
@@ -2175,19 +2175,51 @@
       },
       {
         "route": "Istanbul - Sulaymaniyah",
-        "search_date": "30.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA226",
-        "from_code": "IST",
-        "departure_time": "12:00",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
         "to_code": "ISU",
-        "arrival_time": "14:30",
+        "arrival_time": "01:40",
         "duration": "",
-        "price": "378.39",
+        "price": "151.42",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Sulaymaniyah",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
+        "to_code": "ISU",
+        "arrival_time": "01:40",
+        "duration": "",
+        "price": "7339.23",
+        "currency": "USD",
+        "seats_available": "1",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Istanbul - Sulaymaniyah",
+        "search_date": "02.07.2026",
+        "airline": "AJet",
+        "flight_number": "VF373",
+        "from_code": "SAW",
+        "departure_time": "23:15",
+        "to_code": "ISU",
+        "arrival_time": "01:40",
+        "duration": "",
+        "price": "164.35",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (U)",
+        "baggage": "Hand Bag"
       },
       {
         "route": "Istanbul - Sulaymaniyah",
@@ -2215,7 +2247,7 @@
         "to_code": "ISU",
         "arrival_time": "01:40",
         "duration": "",
-        "price": "7339.24",
+        "price": "7339.23",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
