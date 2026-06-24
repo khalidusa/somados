@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T09:44:24.802859",
-  "total": 372,
+  "updated_at": "2026-06-24T09:45:40.332109",
+  "total": 373,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -5860,10 +5860,26 @@
         "to_code": "ESB",
         "arrival_time": "12:40",
         "duration": "",
-        "price": "291.59",
+        "price": "360.3",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (S)",
+        "class": "Economy (K)",
+        "baggage": "Hand Bag"
+      },
+      {
+        "route": "Baghdad - Ankara",
+        "search_date": "04.07.2026",
+        "airline": "Pegasus Airlines",
+        "flight_number": "PC1707",
+        "from_code": "BGW",
+        "departure_time": "20:25",
+        "to_code": "ESB",
+        "arrival_time": "22:40",
+        "duration": "",
+        "price": "263.59",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (X)",
         "baggage": "Hand Bag"
       }
     ],
