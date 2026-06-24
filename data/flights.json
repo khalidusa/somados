@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T09:39:29.483385",
-  "total": 370,
+  "updated_at": "2026-06-24T09:40:27.801248",
+  "total": 371,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -5548,7 +5548,7 @@
         "to_code": "SAW",
         "arrival_time": "05:50",
         "duration": "",
-        "price": "7407.36",
+        "price": "7407.37",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
@@ -5580,11 +5580,27 @@
         "to_code": "SAW",
         "arrival_time": "05:50",
         "duration": "",
-        "price": "254.55",
+        "price": "254.54",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (U)",
         "baggage": "Hand Bag"
+      },
+      {
+        "route": "Sulaymaniyah - Istanbul",
+        "search_date": "04.07.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA225",
+        "from_code": "ISU",
+        "departure_time": "08:30",
+        "to_code": "IST",
+        "arrival_time": "11:00",
+        "duration": "",
+        "price": "259.29",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
       }
     ],
     "Baghdad - Antalya": [
