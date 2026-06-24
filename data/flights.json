@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T13:39:30.737905",
+  "updated_at": "2026-06-24T13:40:40.119222",
   "total": 392,
   "routes": {
     "Istanbul - Baghdad": [
@@ -5984,10 +5984,10 @@
         "to_code": "AYT",
         "arrival_time": "11:30",
         "duration": "",
-        "price": "148.17",
+        "price": "185.15",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (U)",
+        "class": "Economy (T)",
         "baggage": "Hand Bag"
       },
       {
@@ -6032,10 +6032,10 @@
         "to_code": "AYT",
         "arrival_time": "11:30",
         "duration": "",
-        "price": "145.46",
+        "price": "185.15",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (U)",
+        "class": "Economy (T)",
         "baggage": "Hand Bag"
       },
       {
