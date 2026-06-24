@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T13:35:29.389300",
+  "updated_at": "2026-06-24T13:37:01.009848",
   "total": 392,
   "routes": {
     "Istanbul - Baghdad": [
@@ -5706,11 +5706,11 @@
         "to_code": "IST",
         "arrival_time": "04:15",
         "duration": "",
-        "price": "258.34",
+        "price": "379.03",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -5722,11 +5722,11 @@
         "to_code": "IST",
         "arrival_time": "11:40",
         "duration": "",
-        "price": "258.34",
+        "price": "379.03",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
@@ -5754,11 +5754,11 @@
         "to_code": "IST",
         "arrival_time": "11:40",
         "duration": "",
-        "price": "258.34",
+        "price": "379.03",
         "currency": "USD",
         "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
+        "class": "Business (J)",
+        "baggage": "40 KG"
       },
       {
         "route": "Kirkuk - Istanbul",
