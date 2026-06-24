@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T09:28:53.623144",
-  "total": 370,
+  "updated_at": "2026-06-24T09:30:52.684157",
+  "total": 369,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -2244,39 +2244,7 @@
     "Samsun - Baghdad": [
       {
         "route": "Samsun - Baghdad",
-        "search_date": "24.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA302",
-        "from_code": "SZF",
-        "departure_time": "13:10",
-        "to_code": "BGW",
-        "arrival_time": "15:20",
-        "duration": "",
-        "price": "266.5",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Samsun - Baghdad",
-        "search_date": "26.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA302",
-        "from_code": "SZF",
-        "departure_time": "13:10",
-        "to_code": "BGW",
-        "arrival_time": "15:20",
-        "duration": "",
-        "price": "266.5",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Samsun - Baghdad",
-        "search_date": "27.06.2026",
+        "search_date": "28.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA302",
         "from_code": "SZF",
@@ -2309,6 +2277,22 @@
       {
         "route": "Samsun - Baghdad",
         "search_date": "03.07.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA302",
+        "from_code": "SZF",
+        "departure_time": "13:10",
+        "to_code": "BGW",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "266.5",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Samsun - Baghdad",
+        "search_date": "04.07.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA302",
         "from_code": "SZF",
