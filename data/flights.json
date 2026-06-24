@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T09:23:40.775715",
-  "total": 367,
+  "updated_at": "2026-06-24T09:25:18.824673",
+  "total": 366,
   "routes": {
     "Istanbul - Baghdad": [
       {
@@ -1885,22 +1885,6 @@
     "Istanbul - Kirkuk": [
       {
         "route": "Istanbul - Kirkuk",
-        "search_date": "24.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA252",
-        "from_code": "IST",
-        "departure_time": "12:40",
-        "to_code": "KIK",
-        "arrival_time": "15:20",
-        "duration": "",
-        "price": "384.05",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Istanbul - Kirkuk",
         "search_date": "25.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA252",
@@ -1965,22 +1949,6 @@
       },
       {
         "route": "Istanbul - Kirkuk",
-        "search_date": "29.06.2026",
-        "airline": "Iraqi Airways",
-        "flight_number": "IA252",
-        "from_code": "IST",
-        "departure_time": "12:40",
-        "to_code": "KIK",
-        "arrival_time": "15:20",
-        "duration": "",
-        "price": "384.05",
-        "currency": "USD",
-        "seats_available": "9",
-        "class": "Economy (Y)",
-        "baggage": "30 KG"
-      },
-      {
-        "route": "Istanbul - Kirkuk",
         "search_date": "30.06.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA254",
@@ -2030,6 +1998,22 @@
       {
         "route": "Istanbul - Kirkuk",
         "search_date": "03.07.2026",
+        "airline": "Iraqi Airways",
+        "flight_number": "IA252",
+        "from_code": "IST",
+        "departure_time": "12:40",
+        "to_code": "KIK",
+        "arrival_time": "15:20",
+        "duration": "",
+        "price": "384.05",
+        "currency": "USD",
+        "seats_available": "9",
+        "class": "Economy (Y)",
+        "baggage": "30 KG"
+      },
+      {
+        "route": "Istanbul - Kirkuk",
+        "search_date": "04.07.2026",
         "airline": "Iraqi Airways",
         "flight_number": "IA252",
         "from_code": "IST",
