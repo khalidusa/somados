@@ -965,7 +965,7 @@ function renderFlights(flights, fromAr, toAr) {
         <div class="fl-route">
           <div class="fl-point">
             <div class="fl-time">${f.departure_time || '--:--'}</div>
-            <div class="fl-code">${f.from_code || ''}</div>
+            <div class="fl-code">${f.from_name || f.from_code || ''}</div>
           </div>
           <div class="fl-mid">
             <div class="fl-line">
@@ -977,7 +977,7 @@ function renderFlights(flights, fromAr, toAr) {
           </div>
           <div class="fl-point">
             <div class="fl-time">${f.arrival_time || '--:--'}</div>
-            <div class="fl-code">${f.to_code || ''}</div>
+            <div class="fl-code">${f.to_name || f.to_code || ''}</div>
           </div>
         </div>
       </div>
