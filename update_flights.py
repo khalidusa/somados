@@ -1,4 +1,4 @@
-import requests, time, sys, json, base64, os
+import requests, time, sys, json, base64, os, re
 from datetime import datetime, timedelta
 
 WORK_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,57 +24,30 @@ USER_AGENT   = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 COMMISSION   = 0.08
 
 AIRPORTS_AR = {
-    'BGW': 'بغداد',
-    'EBL': 'أربيل',
-    'BSR': 'البصرة',
-    'NJF': 'النجف',
-    'KIK': 'كركوك',
-    'ISU': 'السليمانية',
-    'IST': 'إسطنبول',
-    'SAW': 'إسطنبول (صبيحة)',
-    'AYT': 'أنطاليا',
-    'ESB': 'أنقرة',
-    'SZF': 'سامسون',
-    'TZX': 'طرابزون',
-    'ADB': 'إزمير',
-    'DLM': 'دالامان',
-    'BJV': 'بودروم',
-    'GZT': 'غازي عنتاب',
-    'KYA': 'قونية',
-    'VAN': 'وان',
-    'ERZ': 'أرضروم',
+    'BGW': 'بغداد',    'EBL': 'أربيل',    'BSR': 'البصرة',
+    'NJF': 'النجف',    'KIK': 'كركوك',    'ISU': 'السليمانية',
+    'IST': 'إسطنبول',  'SAW': 'إسطنبول (صبيحة)', 'AYT': 'أنطاليا',
+    'ESB': 'أنقرة',    'SZF': 'سامسون',   'TZX': 'طرابزون',
+    'ADB': 'إزمير',    'DLM': 'دالامان',  'BJV': 'بودروم',
+    'GZT': 'غازي عنتاب', 'KYA': 'قونية', 'VAN': 'وان', 'ERZ': 'أرضروم',
 }
 
 AIRLINES_AR = {
-    'AJet': 'أناضول جت',
-    'ajet': 'أناضول جت',
-    'Ajet': 'أناضول جت',
-    'AJET': 'أناضول جت',
-    'VF': 'أناضول جت',
-    'Pegasus Airlines': 'بيغاسوس',
-    'Pegasus': 'بيغاسوس',
-    'PC': 'بيغاسوس',
-    'Turkish Airlines': 'الخطوط التركية',
-    'TK': 'الخطوط التركية',
-    'Iraqi Airways': 'الخطوط الجوية العراقية',
-    'IA': 'الخطوط الجوية العراقية',
-    'Fly Baghdad': 'فلاي بغداد',
-    'IF': 'فلاي بغداد',
-    'SunExpress': 'صن إكسبريس',
-    'XQ': 'صن إكسبريس',
-    'Air Arabia': 'العربية للطيران',
-    'G9': 'العربية للطيران',
-    'FlyDubai': 'فلاي دبي',
-    'flydubai': 'فلاي دبي',
-    'FZ': 'فلاي دبي',
-    'Qatar Airways': 'الخطوط القطرية',
-    'QR': 'الخطوط القطرية',
-    'Emirates': 'طيران الإمارات',
-    'EK': 'طيران الإمارات',
-    'Tailwind Airlines': 'تيل ويند',
-    'TI': 'تيل ويند',
-    'Corendon Airlines': 'كورندون',
-    'XC': 'كورندون',
+    'AJet': 'أناضول جت',        'ajet': 'أناضول جت',
+    'Ajet': 'أناضول جت',        'AJET': 'أناضول جت',       'VF': 'أناضول جت',
+    'Pegasus Airlines': 'بيغاسوس', 'Pegasus': 'بيغاسوس',  'PC': 'بيغاسوس',
+    'Turkish Airlines': 'الخطوط التركية',                   'TK': 'الخطوط التركية',
+    'Iraqi Airways': 'الخطوط الجوية العراقية',              'IA': 'الخطوط الجوية العراقية',
+    'Fly Baghdad': 'فلاي بغداد',                            'IF': 'فلاي بغداد',
+    'Basra Airlines': 'طيران البصرة', 'Basra': 'طيران البصرة', 'BH': 'طيران البصرة',
+    'UR Airlines': 'يوآر إيرلاينز',                         'UR': 'يوآر إيرلاينز',
+    'SunExpress': 'صن إكسبريس',                             'XQ': 'صن إكسبريس',
+    'Air Arabia': 'العربية للطيران',                         'G9': 'العربية للطيران',
+    'FlyDubai': 'فلاي دبي', 'flydubai': 'فلاي دبي',        'FZ': 'فلاي دبي',
+    'Qatar Airways': 'الخطوط القطرية',                       'QR': 'الخطوط القطرية',
+    'Emirates': 'طيران الإمارات',                            'EK': 'طيران الإمارات',
+    'Tailwind Airlines': 'تيل ويند',                        'TI': 'تيل ويند',
+    'Corendon Airlines': 'كورندون',                         'XC': 'كورندون',
 }
 
 ROUTES = [
@@ -107,52 +80,41 @@ def b2b_login():
     r = requests.post(f"{B2B_BASE}/v2/login",
         json={"email": B2B_EMAIL, "password": B2B_PASSWORD},
         headers={"Content-Type": "application/json", "Accept": "application/json",
-                 "User-Agent": USER_AGENT},
-        timeout=15)
-    data = r.json()
-    token = data.get('token')
+                 "User-Agent": USER_AGENT}, timeout=15)
+    token = r.json().get('token')
     if not token:
-        print(f"❌ فشل تسجيل الدخول: {data}")
+        print(f"❌ فشل تسجيل الدخول")
         sys.exit(1)
     print(f"✅ تسجيل دخول b2bcheetah (وكيل)")
     return token
 
 
 def b2b_search(token, dep, arr, date_str):
-    hdrs = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Origin": "https://b2bcheetah.com",
-        "User-Agent": USER_AGENT,
-    }
+    hdrs = {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+            "Accept": "application/json", "Origin": "https://b2bcheetah.com", "User-Agent": USER_AGENT}
     try:
         r = requests.post(f"{B2B_BASE}/api/search-progressive",
             json={"from_flight": dep, "to_flight": arr, "date_flight": date_str,
                   "cabin": "economy", "adult": 1, "child": 0, "infant": 0},
             headers=hdrs, timeout=30)
         if r.status_code != 200:
-            return None, f"HTTP {r.status_code}"
-        data = r.json()
-        poll_url = data.get('poll_url')
+            return [], f"HTTP {r.status_code}"
+        poll_url = r.json().get('poll_url')
         if not poll_url:
-            return None, "no poll_url"
+            return [], "no poll_url"
     except Exception as e:
-        return None, str(e)
+        return [], str(e)
 
-    for _ in range(10):
+    result = {}
+    for _ in range(25):
         time.sleep(3)
         try:
-            r2 = requests.get(poll_url, headers=hdrs, timeout=15)
-            result = r2.json()
+            result = requests.get(poll_url, headers=hdrs, timeout=20).json()
             if result.get('completed') or result.get('progress', {}).get('percentage', 0) >= 100:
                 return result.get('results', []), None
         except Exception as e:
-            return None, str(e)
-    try:
-        return result.get('results', []), None
-    except:
-        return None, "timeout"
+            return [], str(e)
+    return result.get('results', []), None
 
 
 def extract_flights(results, route_name, date_str):
@@ -163,34 +125,39 @@ def extract_flights(results, route_name, date_str):
             continue
         journey = journeys[0]
 
+        # مباشر فقط: stops=0 و segment واحد فقط
         if journey.get('stops', 0) > 0:
             continue
-
         segments = journey.get('segments', [])
-        if not segments:
+        if len(segments) != 1:
             continue
         seg = segments[0]
 
-        airline_en = item.get('airline', '') or item.get('validating_airline', {}).get('en', '')
-        airline_code = item.get('validating_airline', {}).get('abb', '')
-        airline = AIRLINES_AR.get(airline_en) or AIRLINES_AR.get(airline_code) or airline_en
+        # تحديد اسم الخط
+        airline_en = item.get('airline', '').strip()
+        airline_code = item.get('validating_airline', {}).get('abb', '').strip()
+        airline = AIRLINES_AR.get(airline_en) or AIRLINES_AR.get(airline_code) or airline_en or airline_code
+        if not airline:
+            continue  # تخطّ الرحلات بدون اسم خط
 
-        seg_num = seg.get('number', '')
-        if airline_code and seg_num.startswith(airline_code):
+        # رقم الرحلة — تجنّب تكرار كود الخط (VF131 لا VF+VF131)
+        seg_num = seg.get('number', '').strip()
+        if airline_code and seg_num.upper().startswith(airline_code.upper()):
             flight_num = seg_num
         else:
             flight_num = f"{airline_code}{seg_num}".strip()
 
+        # الأوقات
         dep_time = journey.get('departure', {}).get('time', '')
         arr_time = journey.get('arrival', {}).get('time', '')
         dep_time_short = dep_time.split(' ')[-1] if ' ' in dep_time else dep_time
         arr_time_short = arr_time.split(' ')[-1] if ' ' in arr_time else arr_time
 
-        # أكواد المطارات بالإنجليزي (للفلترة في الموقع) + الاسم العربي للعرض
+        # المطارات — كود إنجليزي للفلترة + عربي للعرض
         from_code = journey.get('departure', {}).get('airport', {}).get('code', '')
-        to_code = journey.get('arrival', {}).get('airport', {}).get('code', '')
+        to_code   = journey.get('arrival',   {}).get('airport', {}).get('code', '')
         from_name = AIRPORTS_AR.get(from_code, from_code)
-        to_name = AIRPORTS_AR.get(to_code, to_code)
+        to_name   = AIRPORTS_AR.get(to_code,   to_code)
 
         duration = journey.get('duration', {}).get('text', '')
 
@@ -199,53 +166,64 @@ def extract_flights(results, route_name, date_str):
             continue
         price_usd = round(price_usd * (1 + COMMISSION), 2)
 
-        baggage_info = seg.get('baggage', {})
-        baggage_kg = str(baggage_info.get('allowance', '')).strip()
-        baggage_unit = baggage_info.get('unit', '')
-        baggage = f"{baggage_kg} {baggage_unit}".strip() if baggage_kg and baggage_kg != '0' else 'Hand Bag'
+        # الأمتعة
+        bag_info  = seg.get('baggage', {})
+        bag_kg    = str(bag_info.get('allowance', '')).strip()
+        bag_unit  = str(bag_info.get('unit', '')).strip()
+        if bag_kg and bag_kg not in ('0', '0 ', ''):
+            baggage = f"{bag_kg} {bag_unit}".strip()
+        else:
+            baggage = 'Hand Bag'
 
         seats = seg.get('seats_remaining', '')
-        cls = seg.get('class', 'Economy')
+        cls   = seg.get('class', 'Economy')
 
         flights.append({
-            'route': route_name,
-            'search_date': datetime.strptime(date_str, '%Y-%m-%d').strftime('%d.%m.%Y'),
-            'airline': airline,
-            'flight_number': flight_num,
-            'from_code': from_code,    # كود إنجليزي للفلترة (IST, BGW...)
-            'from_name': from_name,    # اسم عربي للعرض
+            'route':          route_name,
+            'search_date':    datetime.strptime(date_str, '%Y-%m-%d').strftime('%d.%m.%Y'),
+            'airline':        airline,
+            'flight_number':  flight_num,
+            'from_code':      from_code,
+            'from_name':      from_name,
             'departure_time': dep_time_short,
-            'to_code': to_code,        # كود إنجليزي للفلترة
-            'to_name': to_name,        # اسم عربي للعرض
-            'arrival_time': arr_time_short,
-            'duration': duration,
-            'price': str(price_usd),
-            'currency': 'USD',
+            'to_code':        to_code,
+            'to_name':        to_name,
+            'arrival_time':   arr_time_short,
+            'duration':       duration,
+            'price':          str(price_usd),
+            'currency':       'USD',
             'seats_available': str(seats) if seats else '',
-            'class': cls,
-            'fare_type': '',
-            'baggage': baggage,
+            'class':          cls,
+            'baggage':        baggage,
         })
     return flights
 
 
+def dedup_flights(flights):
+    """نفس الخط + رقم الرحلة (بدون كود الخط) + وقت + تاريخ + نوع أمتعة → الأرخص"""
+    dedup = {}
+    for f in flights:
+        num_clean = re.sub(r'^[A-Z]{1,3}', '', f['flight_number'])
+        bag_key   = 'nobag' if f['baggage'] == 'Hand Bag' else 'bag'
+        key = f"{f['airline']}|{num_clean}|{f['departure_time']}|{f['search_date']}|{bag_key}"
+        if key not in dedup or float(f['price']) < float(dedup[key]['price']):
+            dedup[key] = f
+    return list(dedup.values())
+
+
 def send_telegram(msg):
     try:
-        requests.post(
-            f'https://api.telegram.org/bot{TG_TOKEN}/sendMessage',
-            data={'chat_id': TG_CHAT, 'text': msg, 'parse_mode': 'HTML'},
-            timeout=10
-        )
+        requests.post(f'https://api.telegram.org/bot{TG_TOKEN}/sendMessage',
+            data={'chat_id': TG_CHAT, 'text': msg, 'parse_mode': 'HTML'}, timeout=10)
     except Exception:
         pass
 
 
 def push_github(data):
-    hdrs = {'Authorization': f'token {GITHUB_TOKEN}',
-            'Accept': 'application/vnd.github.v3+json'}
-    url = f'https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE}'
-    sha = None
-    r = requests.get(url, headers=hdrs)
+    hdrs = {'Authorization': f'token {GITHUB_TOKEN}', 'Accept': 'application/vnd.github.v3+json'}
+    url  = f'https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE}'
+    sha  = None
+    r    = requests.get(url, headers=hdrs)
     if r.status_code == 200:
         sha = r.json().get('sha')
     content = base64.b64encode(json.dumps(data, ensure_ascii=False, indent=2).encode()).decode()
@@ -263,23 +241,23 @@ def push_github(data):
 
 def main():
     print('=' * 70)
-    print(f'  Somados Updater (b2bcheetah) - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+    print(f'  Somados Updater (b2bcheetah) — {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('=' * 70)
 
     token = b2b_login()
-
     start = datetime.now() + timedelta(days=1)
     dates = [(start + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(10)]
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
 
     all_data = {}
-    total = 0
-    t_start = time.time()
+    total    = 0
+    t_start  = time.time()
 
     for ri, route in enumerate(ROUTES, 1):
         name = route['name']
         print(f'[{ri}/{len(ROUTES)}] {name}')
-        flights = []
+        raw_flights = []
+
         for di, date in enumerate(dates, 1):
             print(f'  [{di}/10] {date}... ', end='', flush=True)
             results, err = b2b_search(token, route['from'], route['to'], date)
@@ -287,23 +265,22 @@ def main():
                 print(f'ERR: {err}')
                 continue
             f = extract_flights(results, name, date)
-            flights.extend(f)
+            # إعادة المحاولة مرة واحدة إذا رجع 0
+            if len(f) == 0:
+                time.sleep(5)
+                results2, err2 = b2b_search(token, route['from'], route['to'], date)
+                if not err2:
+                    f = extract_flights(results2, name, date)
+            raw_flights.extend(f)
             print(f'OK {len(f)}')
+            time.sleep(2)
 
-        # Dedup: نفس الخط+رقم+وقت+تاريخ+أمتعة → الأرخص
-        dedup = {}
-        for f in flights:
-            has_bag = f['baggage'] != 'Hand Bag' and not f['baggage'].startswith('0')
-            bag_key = 'bag' if has_bag else 'nobag'
-            key = f"{f['airline']}|{f['flight_number']}|{f['departure_time']}|{f['search_date']}|{bag_key}"
-            if key not in dedup or float(f['price'] or 9999) < float(dedup[key]['price'] or 9999):
-                dedup[key] = f
-        flights = list(dedup.values())
-
+        flights = dedup_flights(raw_flights)
         all_data[name] = flights
         total += len(flights)
+        print(f'  → {len(raw_flights)} → بعد dedup: {len(flights)}')
 
-    elapsed = round(time.time() - t_start)
+    elapsed   = round(time.time() - t_start)
     mins, secs = divmod(elapsed, 60)
     output = {'updated_at': datetime.now().isoformat(), 'total': total, 'routes': all_data}
     print(f'\n📤 يرفع {total} رحلة...')
@@ -320,11 +297,7 @@ def main():
         )
         print('📱 تم إرسال إشعار تيليجرام')
     else:
-        send_telegram(
-            f'❌ <b>somados.com — فشل الرفع</b>\n'
-            f'🕐 {now_str}\n'
-            f'راجع اللوق للتفاصيل'
-        )
+        send_telegram(f'❌ <b>somados.com — فشل الرفع</b>\n🕐 {now_str}')
 
 
 if __name__ == '__main__':
