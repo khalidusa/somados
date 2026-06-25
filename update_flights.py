@@ -240,6 +240,21 @@ def push_github(data):
 
 
 def main():
+    # منع تشغيل نسختين في نفس الوقت
+    lock_file = f'{WORK_DIR}/.update.lock'
+    if os.path.exists(lock_file):
+        print('⚠️ تحديث آخر يعمل حالياً — تخطّي')
+        sys.exit(0)
+    open(lock_file, 'w').write(str(os.getpid()))
+
+    try:
+        _run()
+    finally:
+        if os.path.exists(lock_file):
+            os.remove(lock_file)
+
+
+def _run():
     print('=' * 70)
     print(f'  Somados Updater (b2bcheetah) — {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('=' * 70)
