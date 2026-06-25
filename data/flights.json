@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T20:43:31.572160",
+  "updated_at": "2026-06-24T20:44:40.990944",
   "total": 408,
   "routes": {
     "Istanbul - Baghdad": [
@@ -2113,7 +2113,7 @@
         "to_code": "BSR",
         "arrival_time": "22:30",
         "duration": "",
-        "price": "389.71",
+        "price": "389.61",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2129,7 +2129,7 @@
         "to_code": "BSR",
         "arrival_time": "22:30",
         "duration": "",
-        "price": "389.71",
+        "price": "389.61",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2145,7 +2145,7 @@
         "to_code": "BSR",
         "arrival_time": "22:30",
         "duration": "",
-        "price": "389.71",
+        "price": "389.61",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
@@ -2161,7 +2161,7 @@
         "to_code": "BSR",
         "arrival_time": "22:30",
         "duration": "",
-        "price": "389.71",
+        "price": "389.61",
         "currency": "USD",
         "seats_available": "9",
         "class": "Economy (Y)",
