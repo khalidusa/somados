@@ -380,6 +380,8 @@ nav{
 .fl-tag svg{width:11px;height:11px;fill:currentColor;flex-shrink:0}
 .fl-tag.direct{background:rgba(0,166,166,.08);color:var(--teal)}
 .fl-tag.seats{background:rgba(0,166,166,.06);color:rgba(0,166,166,.8)}
+.fl-tag.bag-checked{background:rgba(34,197,94,.08);color:#16a34a}
+.fl-tag.bag-hand{background:rgba(234,179,8,.08);color:#b45309}
 
 .fl-price-wrap{display:flex;align-items:center;gap:1rem}
 .fl-price{
@@ -983,7 +985,14 @@ function renderFlights(flights, fromAr, toAr) {
         <div class="fl-tags">
           <span class="fl-tag direct"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>مباشر</span>
           ${f.seats_available ? `<span class="fl-tag seats"><svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>${f.seats_available}</span>` : ''}
-          ${(f.baggage || f.class) ? `<span class="fl-tag"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.35C18 2.53 15.51 1 13.5 1h-3C8.49 1 6 2.53 6 4.65c0 .47.11.91.18 1.35H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>${f.baggage || f.class}</span>` : ''}
+          ${(()=>{
+            const b = f.baggage || '';
+            if (!b) return '';
+            const isHandBag = b === 'Hand Bag' || b === '0' || b.startsWith('0 ');
+            const cls = isHandBag ? 'fl-tag bag-hand' : 'fl-tag bag-checked';
+            const label = isHandBag ? 'حقيبة يد فقط' : b;
+            return `<span class="${cls}"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.35C18 2.53 15.51 1 13.5 1h-3C8.49 1 6 2.53 6 4.65c0 .47.11.91.18 1.35H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>${label}</span>`;
+          })()}
         </div>
         <div class="fl-price-wrap">
           <div class="fl-price">
