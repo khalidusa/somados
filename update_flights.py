@@ -278,7 +278,9 @@ def main():
         flights = dedup_flights(raw_flights)
         all_data[name] = flights
         total += len(flights)
+        now_t = datetime.now().strftime('%H:%M')
         print(f'  → {len(raw_flights)} → بعد dedup: {len(flights)}')
+        send_telegram(f'✅ {name} — {len(flights)} رحلة [{ri}/{len(ROUTES)}] {now_t}')
 
     elapsed   = round(time.time() - t_start)
     mins, secs = divmod(elapsed, 60)
