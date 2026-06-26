@@ -106,10 +106,10 @@ def b2b_search(token, dep, arr, date_str):
         return [], str(e)
 
     result = {}
-    for _ in range(25):
-        time.sleep(3)
+    for _ in range(8):
+        time.sleep(2)
         try:
-            result = requests.get(poll_url, headers=hdrs, timeout=20).json()
+            result = requests.get(poll_url, headers=hdrs, timeout=15).json()
             if result.get('completed') or result.get('progress', {}).get('percentage', 0) >= 100:
                 return result.get('results', []), None
         except Exception as e:
@@ -280,15 +280,9 @@ def _run():
                 print(f'ERR: {err}')
                 continue
             f = extract_flights(results, name, date)
-            # إعادة المحاولة مرة واحدة إذا رجع 0
-            if len(f) == 0:
-                time.sleep(5)
-                results2, err2 = b2b_search(token, route['from'], route['to'], date)
-                if not err2:
-                    f = extract_flights(results2, name, date)
             raw_flights.extend(f)
             print(f'OK {len(f)}')
-            time.sleep(2)
+            time.sleep(1)
 
         flights = dedup_flights(raw_flights)
         all_data[name] = flights
