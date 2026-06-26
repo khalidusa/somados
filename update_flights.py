@@ -1,5 +1,6 @@
 import requests, time, sys, json, base64, os, re
 from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 WORK_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -268,28 +269,27 @@ def _run():
     total    = 0
     t_start  = time.time()
 
-    for ri, route in enumerate(ROUTES, 1):
+    def search_route(args):
+        ri, route = args
         name = route['name']
-        print(f'[{ri}/{len(ROUTES)}] {name}')
         raw_flights = []
-
         for di, date in enumerate(dates, 1):
-            print(f'  [{di}/10] {date}... ', end='', flush=True)
             results, err = b2b_search(token, route['from'], route['to'], date)
-            if err:
-                print(f'ERR: {err}')
-                continue
-            f = extract_flights(results, name, date)
-            raw_flights.extend(f)
-            print(f'OK {len(f)}')
-            time.sleep(1)
-
+            if not err:
+                raw_flights.extend(extract_flights(results, name, date))
+            time.sleep(0.5)
         flights = dedup_flights(raw_flights)
-        all_data[name] = flights
-        total += len(flights)
         now_t = datetime.now().strftime('%H:%M')
-        print(f'  → {len(raw_flights)} → بعد dedup: {len(flights)}')
         send_telegram(f'✅ {name} — {len(flights)} رحلة [{ri}/{len(ROUTES)}] {now_t}')
+        print(f'[{ri}/{len(ROUTES)}] {name} → {len(flights)} رحلة')
+        return name, flights
+
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        futures = {ex.submit(search_route, (ri, route)): route for ri, route in enumerate(ROUTES, 1)}
+        for future in as_completed(futures):
+            name, flights = future.result()
+            all_data[name] = flights
+            total += len(flights)
 
     elapsed   = round(time.time() - t_start)
     mins, secs = divmod(elapsed, 60)
