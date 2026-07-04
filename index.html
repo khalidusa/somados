@@ -875,7 +875,7 @@ function showDirection(dir) {
 
 function showFlights(routeKey, fromAr, toAr, fromCode, toCode) {
   currentRouteKey = routeKey;
-  document.getElementById('flights-title').textContent = fromAr + ' → ' + toAr;
+  document.getElementById('flights-title').textContent = fromAr + ' ← ' + toAr;
   document.getElementById('flights-sub').textContent = 'رحلات مباشرة · أسعار تشمل رسوم الوكالة';
 
   const allFlights = (flightsData.routes && flightsData.routes[routeKey]) || [];
