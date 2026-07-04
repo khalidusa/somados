@@ -113,22 +113,25 @@ nav{
   cursor:pointer;transition:all .3s;
 }
 .hero-dot.active{background:#fff;width:20px;border-radius:3px}
-/* plane animation */
-.hero-path{
-  position:absolute;top:50%;left:0;right:0;z-index:3;
-  height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
-  opacity:.5;
+/* ambient aurora glow — modern, restful */
+.hero-aurora{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.hero-aurora span{
+  position:absolute;border-radius:50%;
+  filter:blur(80px);opacity:.45;mix-blend-mode:screen;
+  background:radial-gradient(circle,#00a6a6,transparent 70%);
+  animation:auroraDrift 22s ease-in-out infinite;
+  will-change:transform;
 }
-.hero-plane-wrap{
-  position:absolute;top:calc(50% - 12px);left:-60px;z-index:4;
-  animation:flyAcross 14s linear infinite;pointer-events:none;
+.hero-aurora span:nth-child(1){width:420px;height:420px;top:-90px;left:-70px;animation-delay:0s}
+.hero-aurora span:nth-child(2){width:340px;height:340px;bottom:-80px;right:-50px;background:radial-gradient(circle,#00c8c8,transparent 70%);animation-delay:-7s}
+.hero-aurora span:nth-child(3){width:280px;height:280px;top:42%;left:52%;background:radial-gradient(circle,#4de0e0,transparent 70%);animation-delay:-14s}
+@keyframes auroraDrift{
+  0%,100%{transform:translate(0,0) scale(1)}
+  33%{transform:translate(50px,36px) scale(1.18)}
+  66%{transform:translate(-36px,24px) scale(.88)}
 }
-.hero-plane-wrap svg{width:22px;height:22px;fill:rgba(255,255,255,.5);opacity:.6}
-@keyframes flyAcross{
-  0%{left:-60px;opacity:0}
-  5%{opacity:.6}
-  95%{opacity:.6}
-  100%{left:calc(100% + 60px);opacity:0}
+@media(prefers-reduced-motion:reduce){
+  .hero-aurora span{animation:none}
 }
 .hero-content{
   position:relative;z-index:5;text-align:center;padding:2rem;max-width:860px;width:100%
@@ -460,6 +463,18 @@ footer{
   .hero-cards{grid-template-columns:1fr}
   .fl-route{gap:.5rem}
   .fl-time{font-size:1.3rem}
+
+  /* mobile hero: white background, no images, dark text */
+  .hero{background:#fff;min-height:auto;padding:2.5rem 0 3rem}
+  .hero-slides,.hero-overlay,.hero-aurora,.hero-grid,.hero-dots{display:none}
+  .hero-title{color:var(--text);text-shadow:none}
+  .hero-sub{color:var(--text2)}
+  .hero-cta-strip{color:var(--text2)}
+  .hero-cta-strip span{color:var(--text)}
+  .hero-eyebrow{
+    background:rgba(0,166,166,.1);color:var(--teal);
+    border-color:rgba(0,166,166,.22);backdrop-filter:none;
+  }
 }
 
 /* ─── HAMBURGER & MOBILE MENU ─── */
@@ -579,10 +594,7 @@ footer{
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-grid"></div>
-    <div class="hero-path"></div>
-    <div class="hero-plane-wrap">
-      <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-    </div>
+    <div class="hero-aurora"><span></span><span></span><span></span></div>
     <!-- Slide dots -->
     <div class="hero-dots" id="heroDots"></div>
     <div class="hero-content">
@@ -593,7 +605,7 @@ footer{
       <h1 class="hero-title">
         سافر بأنسب سعر<br><span class="line2">بين العراق وتركيا</span>
       </h1>
-      <p class="hero-sub">رحلات مباشرة مع أفضل شركات الطيران · حجز سريع عبر واتساب</p>
+      <p class="hero-sub">رحلات مباشرة مع أفضل شركات الطيران</p>
       <p class="hero-cta-strip">احجز بأنسب سعر <span>لجميع الوجهات</span></p>
       <div class="hero-cards">
         <div class="dir-card" onclick="showDirection('turkey-to-iraq')">
@@ -756,8 +768,8 @@ footer{
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 سومادوس — جميع الحقوق محفوظة</p>
-      <p style="margin-top:.3rem">الأسعار تقريبية وتخضع للتغيير · حجز عبر واتساب</p>
+      <p>© 2026 Somados — All rights reserved</p>
+      <p style="margin-top:.3rem">الأسعار تقريبية وتخضع للتغيير</p>
     </div>
   </div>
 </footer>
