@@ -1,4 +1,4 @@
-import requests, time, sys, json, base64, os, re
+import requests, time, sys, json, base64, os, re, threading
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -41,7 +41,8 @@ AIRLINES_AR = {
     'Iraqi Airways': 'الخطوط الجوية العراقية',              'IA': 'الخطوط الجوية العراقية',
     'Fly Baghdad': 'فلاي بغداد',                            'IF': 'فلاي بغداد',
     'Basra Airlines': 'طيران البصرة', 'Basra': 'طيران البصرة', 'BH': 'طيران البصرة',
-    'UR Airlines': 'يوآر إيرلاينز',                         'UR': 'يوآر إيرلاينز',
+    'UR Airlines': 'طيران اور', 'Ur Airlines': 'طيران اور',
+    'UR': 'طيران اور', 'UD': 'طيران اور',
     'SunExpress': 'صن إكسبريس',                             'XQ': 'صن إكسبريس',
     'Air Arabia': 'العربية للطيران',                         'G9': 'العربية للطيران',
     'FlyDubai': 'فلاي دبي', 'flydubai': 'فلاي دبي',        'FZ': 'فلاي دبي',
@@ -90,126 +91,219 @@ def b2b_login():
     return token
 
 
-def b2b_search(token, dep, arr, date_str):
-    hdrs = {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-            "Accept": "application/json", "Origin": "https://b2bcheetah.com", "User-Agent": USER_AGENT}
-    try:
-        r = requests.post(f"{B2B_BASE}/api/search-progressive",
-            json={"from_flight": dep, "to_flight": arr, "date_flight": date_str,
-                  "cabin": "economy", "adult": 1, "child": 0, "infant": 0},
-            headers=hdrs, timeout=30)
-        if r.status_code != 200:
-            return [], f"HTTP {r.status_code}"
-        poll_url = r.json().get('poll_url')
-        if not poll_url:
-            return [], "no poll_url"
-    except Exception as e:
-        return [], str(e)
+# ─── مدير Token مشترك بين الـ workers (يعيد تسجيل الدخول عند انتهاء الصلاحية) ───
+_token_lock = threading.Lock()
+_token_box  = {'val': None}
 
-    result = {}
-    for _ in range(8):
-        time.sleep(2)
+def get_token():
+    if _token_box['val'] is None:
+        with _token_lock:
+            if _token_box['val'] is None:
+                _token_box['val'] = b2b_login()
+    return _token_box['val']
+
+def refresh_token(old):
+    """يعيد تسجيل الدخول مرة واحدة فقط حتى لو ناداها أكثر من worker بنفس الوقت"""
+    with _token_lock:
+        if _token_box['val'] == old or _token_box['val'] is None:
+            _token_box['val'] = b2b_login()
+    return _token_box['val']
+
+
+# ─── منظّم معدّل الطلبات العام (يمنع تجاوز حد السيرفر ~60 طلب/دقيقة لكل حساب) ───
+# كل طلبات الـ workers تمر من هنا: فاصل ≥1.1 ثانية بين أي طلبين = ~55 طلب/دقيقة (تحت الحد)
+_rate_lock = threading.Lock()
+_last_call = {'t': 0.0}
+MIN_INTERVAL = 1.1
+
+def _throttle():
+    with _rate_lock:
+        wait = MIN_INTERVAL - (time.time() - _last_call['t'])
+        if wait > 0:
+            time.sleep(wait)
+        _last_call['t'] = time.time()
+
+
+def _start_search(dep, arr, date_str):
+    """يبدأ البحث ويرجع (poll_url, error). يعالج 401 (تجديد token) و429 (تجاوز الحد)."""
+    for attempt in range(5):
+        token = get_token()
+        hdrs = {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                "Accept": "application/json", "Origin": "https://b2bcheetah.com", "User-Agent": USER_AGENT}
         try:
-            result = requests.get(poll_url, headers=hdrs, timeout=15).json()
-            if result.get('completed') or result.get('progress', {}).get('percentage', 0) >= 100:
-                return result.get('results', []), None
+            _throttle()
+            r = requests.post(f"{B2B_BASE}/api/search-progressive",
+                json={"from_flight": dep, "to_flight": arr, "date_flight": date_str,
+                      "cabin": "economy", "adult": 1, "child": 0, "infant": 0},
+                headers=hdrs, timeout=30)
+            if r.status_code in (401, 403):
+                refresh_token(token)          # انتهت صلاحية الـ token → جدّده وأعد المحاولة
+                continue
+            if r.status_code == 429:          # تجاوز حد الطلبات → انتظر ثم أعد المحاولة
+                retry_after = int(r.headers.get('Retry-After', 0)) or 30
+                time.sleep(min(retry_after, 60))
+                continue
+            if r.status_code != 200:
+                return None, hdrs, f"HTTP {r.status_code}"
+            poll_url = r.json().get('poll_url')
+            if poll_url:
+                return poll_url, hdrs, None
+            time.sleep(2)                     # لا يوجد poll_url → مهلة قصيرة وأعد المحاولة
         except Exception as e:
-            return [], str(e)
-    return result.get('results', []), None
+            time.sleep(2)
+            if attempt >= 4:
+                return None, hdrs, str(e)
+    return None, hdrs, "429/no poll_url"
+
+
+def b2b_search(dep, arr, date_str):
+    poll_url, hdrs, err = _start_search(dep, arr, date_str)
+    if err:
+        return [], err
+
+    # انتظر أولي 5s قبل أول استفسار
+    time.sleep(5)
+
+    best_results = []
+    last_err = None
+    for attempt in range(20):
+        try:
+            _throttle()
+            resp = requests.get(poll_url, headers=hdrs, timeout=15)
+            if resp.status_code == 429:       # تجاوز الحد → انتظر بدون احتساب محاولة فعلية
+                time.sleep(5)
+                continue
+            result = resp.json()
+            current = result.get('results', [])
+            if len(current) > len(best_results):
+                best_results = current
+            completed = result.get('completed') or result.get('progress', {}).get('percentage', 0) >= 100
+            # ⚠️ الـ API يعلن الاكتمال مبكراً ثم النتائج تتدفق بعده —
+            # لا نثق بالاكتمال إلا بعد وصول نتائج فعلية، أو بعد 8 محاولات للتأكد أنه فارغ حقاً
+            if completed and (len(best_results) > 0 and attempt >= 3):
+                return best_results, None
+            if completed and attempt >= 8:
+                return best_results, None
+        except Exception as e:
+            last_err = str(e)
+            if attempt >= 5:
+                return best_results, last_err
+        time.sleep(2)
+    return best_results, None
+
+
+def _normalize_time(t):
+    """توحيد الوقت إلى HH:MM — يقبل: '10:30', '2026-06-27 10:30', '10:30:00'"""
+    if not t:
+        return ''
+    # خذ آخر جزء بعد المسافة (إذا كان تاريخ + وقت)
+    part = t.strip().split(' ')[-1]
+    # خذ أول جزءين مفصولين بـ : (HH:MM فقط بدون ثواني)
+    hm = ':'.join(part.split(':')[:2])
+    return hm
 
 
 def extract_flights(results, route_name, date_str):
     flights = []
     for item in results:
-        journeys = item.get('journeys', [])
-        if not journeys:
-            continue
-        journey = journeys[0]
+        try:
+            journeys = item.get('journeys') or []
+            if not journeys:
+                continue
+            journey = journeys[0]
 
-        # مباشر فقط: stops=0 و segment واحد فقط
-        if journey.get('stops', 0) > 0:
-            continue
-        segments = journey.get('segments', [])
-        if len(segments) != 1:
-            continue
-        seg = segments[0]
+            # مباشر فقط: stops=0 و segment واحد فقط
+            if (journey.get('stops') or 0) > 0:
+                continue
+            segments = journey.get('segments') or []
+            if len(segments) != 1:
+                continue
+            seg = segments[0]
 
-        # تحديد اسم الخط
-        airline_en = item.get('airline', '').strip()
-        airline_code = item.get('validating_airline', {}).get('abb', '').strip()
-        airline = AIRLINES_AR.get(airline_en) or AIRLINES_AR.get(airline_code) or airline_en or airline_code
-        if not airline:
-            continue  # تخطّ الرحلات بدون اسم خط
+            # كود الخط — المصدر الموثوق: segment.airline.code ثم airline_code (لا validating_airline)
+            seg_airline = seg.get('airline') or {}
+            airline_code = (seg_airline.get('code') or item.get('airline_code') or '').strip()
 
-        # رقم الرحلة — تجنّب تكرار كود الخط (VF131 لا VF+VF131)
-        seg_num = seg.get('number', '').strip()
-        if airline_code and seg_num.upper().startswith(airline_code.upper()):
-            flight_num = seg_num
-        else:
-            flight_num = f"{airline_code}{seg_num}".strip()
+            # اسم الخط: القاموس العربي أولاً، ثم name_ar من الـ segment، ثم الاسم الخام
+            item_airline = (item.get('airline') or '').strip()
+            airline = (AIRLINES_AR.get(item_airline)
+                       or AIRLINES_AR.get(airline_code)
+                       or (seg_airline.get('name_ar') or '').strip()
+                       or (seg_airline.get('name') or '').strip()
+                       or item_airline or airline_code)
+            if not airline:
+                continue  # تخطّ الرحلات بدون اسم خط
 
-        # الأوقات
-        dep_time = journey.get('departure', {}).get('time', '')
-        arr_time = journey.get('arrival', {}).get('time', '')
-        dep_time_short = dep_time.split(' ')[-1] if ' ' in dep_time else dep_time
-        arr_time_short = arr_time.split(' ')[-1] if ' ' in arr_time else arr_time
+            # رقم الرحلة — وحّده: شِل أي بادئة حروف من الرقم ثم أضف كود الخط دائماً (يوقف التكرارات)
+            seg_num = str(seg.get('number') or '').strip()
+            num_only = re.sub(r'^[A-Za-z]+', '', seg_num)   # "UD162"→"162" و "131"→"131"
+            flight_num = f"{airline_code}{num_only}".strip() or seg_num
 
-        # المطارات — كود إنجليزي للفلترة + عربي للعرض
-        from_code = journey.get('departure', {}).get('airport', {}).get('code', '')
-        to_code   = journey.get('arrival',   {}).get('airport', {}).get('code', '')
-        from_name = AIRPORTS_AR.get(from_code, from_code)
-        to_name   = AIRPORTS_AR.get(to_code,   to_code)
+            # الأوقات — توحيد التنسيق إلى HH:MM
+            dep_time = (journey.get('departure') or {}).get('time', '')
+            arr_time = (journey.get('arrival') or {}).get('time', '')
+            dep_time_short = _normalize_time(dep_time)
+            arr_time_short = _normalize_time(arr_time)
 
-        duration = journey.get('duration', {}).get('text', '')
+            # المطارات — كود إنجليزي للفلترة + عربي للعرض
+            from_code = ((journey.get('departure') or {}).get('airport') or {}).get('code', '')
+            to_code   = ((journey.get('arrival')   or {}).get('airport') or {}).get('code', '')
+            from_name = AIRPORTS_AR.get(from_code, from_code)
+            to_name   = AIRPORTS_AR.get(to_code,   to_code)
 
-        price_usd = float(item.get('usd') or item.get('netprice') or 0)
-        if price_usd <= 0:
-            continue
-        price_usd = round(price_usd * (1 + COMMISSION), 2)
+            duration = (journey.get('duration') or {}).get('text', '')
 
-        # الأمتعة
-        bag_info  = seg.get('baggage', {})
-        bag_kg    = str(bag_info.get('allowance', '')).strip()
-        bag_unit  = str(bag_info.get('unit', '')).strip()
-        if bag_kg and bag_kg not in ('0', '0 ', ''):
-            baggage = f"{bag_kg} {bag_unit}".strip()
-        else:
-            baggage = 'Hand Bag'
+            price_usd = float(item.get('usd') or item.get('netprice') or 0)
+            if price_usd <= 0:
+                continue
+            price_usd = round(price_usd * (1 + COMMISSION), 2)
 
-        seats = seg.get('seats_remaining', '')
-        cls   = seg.get('class', 'Economy')
+            # الأمتعة
+            bag_info  = seg.get('baggage') or {}
+            bag_kg    = str(bag_info.get('allowance', '')).strip()
+            bag_unit  = str(bag_info.get('unit', '')).strip()
+            if bag_kg and bag_kg not in ('0', '0 ', ''):
+                baggage = f"{bag_kg} {bag_unit}".strip()
+            else:
+                baggage = 'Hand Bag'
 
-        flights.append({
-            'route':          route_name,
-            'search_date':    datetime.strptime(date_str, '%Y-%m-%d').strftime('%d.%m.%Y'),
-            'airline':        airline,
-            'flight_number':  flight_num,
-            'from_code':      from_code,
-            'from_name':      from_name,
-            'departure_time': dep_time_short,
-            'to_code':        to_code,
-            'to_name':        to_name,
-            'arrival_time':   arr_time_short,
-            'duration':       duration,
-            'price':          str(price_usd),
-            'currency':       'USD',
-            'seats_available': str(seats) if seats else '',
-            'class':          cls,
-            'baggage':        baggage,
-        })
+            seats = seg.get('seats_remaining', '')
+            cls   = seg.get('class', 'Economy')
+
+            flights.append({
+                'route':          route_name,
+                'search_date':    datetime.strptime(date_str, '%Y-%m-%d').strftime('%d.%m.%Y'),
+                'airline':        airline,
+                'flight_number':  flight_num,
+                'from_code':      from_code,
+                'from_name':      from_name,
+                'departure_time': dep_time_short,
+                'to_code':        to_code,
+                'to_name':        to_name,
+                'arrival_time':   arr_time_short,
+                'duration':       duration,
+                'price':          str(price_usd),
+                'currency':       'USD',
+                'seats_available': str(seats) if seats else '',
+                'class':          cls,
+                'baggage':        baggage,
+            })
+        except Exception:
+            continue   # رحلة واحدة تفشل لا توقف الباقي
     return flights
 
 
 def dedup_flights(flights):
-    """نفس الخط + رقم الرحلة (بدون كود الخط) + وقت + تاريخ + نوع أمتعة → الأرخص"""
-    dedup = {}
+    """احذف التكرارات المطابقة تماماً (نفس كل شيء بما فيه السعر والأمتعة)"""
+    seen = set()
+    result = []
     for f in flights:
-        num_clean = re.sub(r'^[A-Z]{1,3}', '', f['flight_number'])
-        bag_key   = 'nobag' if f['baggage'] == 'Hand Bag' else 'bag'
-        key = f"{f['airline']}|{num_clean}|{f['departure_time']}|{f['search_date']}|{bag_key}"
-        if key not in dedup or float(f['price']) < float(dedup[key]['price']):
-            dedup[key] = f
-    return list(dedup.values())
+        key = (f['airline'], f['flight_number'], f['departure_time'],
+               f['search_date'], f['price'], f['baggage'])
+        if key not in seen:
+            seen.add(key)
+            result.append(f)
+    return result
 
 
 def send_telegram(msg):
@@ -260,9 +354,9 @@ def _run():
     print(f'  Somados Updater (b2bcheetah) — {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('=' * 70)
 
-    token = b2b_login()
+    get_token()   # سجّل الدخول مرة واحدة (مشترك بين الـ workers)
     start = datetime.now() + timedelta(days=1)
-    dates = [(start + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(10)]
+    dates = [(start + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(15)]
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
 
     all_data = {}
@@ -274,17 +368,23 @@ def _run():
         name = route['name']
         raw_flights = []
         for di, date in enumerate(dates, 1):
-            results, err = b2b_search(token, route['from'], route['to'], date)
-            if not err:
-                raw_flights.extend(extract_flights(results, name, date))
-            time.sleep(0.5)
+            results, err = b2b_search(route['from'], route['to'], date)
+            got = extract_flights(results, name, date) if not err else []
+            # شبكة أمان: يوم يرجع صفر (فراغ مؤقت) أو خطأ تجاوز حد (429) → أعد المحاولة
+            if (not got and not err) or (err and '429' in str(err)):
+                time.sleep(30 if err else 1.5)   # تجاوز الحد يحتاج انتظار أطول
+                results, err = b2b_search(route['from'], route['to'], date)
+                got = extract_flights(results, name, date) if not err else []
+            if err:
+                print(f'  ⚠️ {name} {date}: {err}')
+            raw_flights.extend(got)
         flights = dedup_flights(raw_flights)
         now_t = datetime.now().strftime('%H:%M')
         send_telegram(f'✅ {name} — {len(flights)} رحلة [{ri}/{len(ROUTES)}] {now_t}')
         print(f'[{ri}/{len(ROUTES)}] {name} → {len(flights)} رحلة')
         return name, flights
 
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    with ThreadPoolExecutor(max_workers=3) as ex:
         futures = {ex.submit(search_route, (ri, route)): route for ri, route in enumerate(ROUTES, 1)}
         for future in as_completed(futures):
             name, flights = future.result()
