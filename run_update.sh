@@ -1,7 +1,7 @@
 #!/bin/bash
 # Somados - Flight Updater (cron + manual)
 
-WORK_DIR="/Users/khaledsameer/Documents/somados"
+WORK_DIR="/Users/khaledsameer/somados"
 LOG_FILE="$WORK_DIR/logs/update.log"
 PYTHON="/usr/bin/python3"
 

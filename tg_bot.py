@@ -3,7 +3,7 @@ from datetime import datetime
 
 TOKEN    = "8856103719:AAGiK2kxxR-7j0nYyBpSJrtmbsFV6_RjwJs"
 CHAT_ID  = "725243049"
-WORK_DIR = os.path.expanduser("~/Documents/somados")
+WORK_DIR = os.path.expanduser("~/somados")
 INTERVAL = 3 * 60 * 60   # 3 ساعات
 
 _last_auto = {'ts': None}
