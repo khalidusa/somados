@@ -334,12 +334,28 @@ def push_github(data):
     return False
 
 
+def _pid_alive(pid):
+    try:
+        os.kill(pid, 0)
+        return True
+    except (OSError, ValueError):
+        return False
+
+
 def main():
-    # منع تشغيل نسختين في نفس الوقت
+    # منع تشغيل نسختين في نفس الوقت — مع تجاهل الأقفال العالقة (عملية ميتة)
     lock_file = f'{WORK_DIR}/.update.lock'
     if os.path.exists(lock_file):
-        print('⚠️ تحديث آخر يعمل حالياً — تخطّي')
-        sys.exit(0)
+        try:
+            old_pid = int(open(lock_file).read().strip() or 0)
+        except Exception:
+            old_pid = 0
+        if old_pid and _pid_alive(old_pid):
+            print('⚠️ تحديث آخر يعمل حالياً — تخطّي')
+            sys.exit(0)
+        # القفل عالق (العملية ميتة مثلاً بعد إعادة تشغيل) → أزِله وتابع
+        print(f'🔓 قفل عالق (PID {old_pid} ميت) — إزالة ومتابعة')
+        os.remove(lock_file)
     open(lock_file, 'w').write(str(os.getpid()))
 
     try:
