@@ -43,7 +43,23 @@ def auto_update_loop():
         except Exception as e:
             send(f"⚠️ فشل التحديث التلقائي: {e}")
 
+def wait_online(max_wait=600):
+    """انتظر جاهزية الشبكة بعد إقلاع الماك (launchd يشغّل البوت قبل جهوز الإنترنت)."""
+    waited = 0
+    while waited < max_wait:
+        try:
+            r = requests.get(f"https://api.telegram.org/bot{TOKEN}/getMe", timeout=8)
+            if r.ok:
+                return True
+        except Exception:
+            pass
+        time.sleep(5)
+        waited += 5
+    return False
+
 def main():
+    wait_online()   # لا ترسل ولا تبدأ حتى يجهز الإنترنت
+    print("✅ البوت شغّال...")
     send(
         "🤖 <b>البوت شغّال!</b>\n\n"
         "📡 المصدر: b2bcheetah (وكيل) — لا تحتاج كوكيز\n"
@@ -52,7 +68,6 @@ def main():
         "/update — تحديث فوري\n"
         "/status — حالة البوت"
     )
-    print("✅ البوت شغّال...")
 
     # شغّل المجدول التلقائي في خيط منفصل
     threading.Thread(target=auto_update_loop, daemon=True).start()
