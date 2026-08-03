@@ -24,6 +24,21 @@ B2B_PASSWORD = os.environ.get('B2B_PASSWORD', 'B123456@B')
 USER_AGENT   = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 COMMISSION   = 0.08
 
+# أسعار ثابتة للخطوط الجوية العراقية — الذهاب (تركيا→العراق) فقط، حسب (مطار المغادرة، مطار الوصول)
+# العودة (العراق→تركيا) تبقى بالتسعير الافتراضي
+IRAQI_FIXED_PRICE = {
+    ('IST', 'BGW'): 315,   # اسطنبول → بغداد
+    ('SAW', 'BGW'): 265,   # صبيحة → بغداد
+    ('IST', 'BSR'): 315,   # اسطنبول → البصرة
+    ('IST', 'EBL'): 300,   # اسطنبول → أربيل
+    ('IST', 'NJF'): 265,   # اسطنبول → النجف
+    ('IST', 'KIK'): 305,   # اسطنبول → كركوك
+    ('SZF', 'BGW'): 220,   # سامسون → بغداد
+    ('ESB', 'BGW'): 285,   # أنقرة → بغداد
+    ('AYT', 'BGW'): 270,   # أنطاليا → بغداد
+    ('ESB', 'KIK'): 250,   # أنقرة → كركوك
+}
+
 AIRPORTS_AR = {
     'BGW': 'بغداد',    'EBL': 'أربيل',    'BSR': 'البصرة',
     'NJF': 'النجف',    'KIK': 'كركوك',    'ISU': 'السليمانية',
@@ -53,7 +68,7 @@ AIRLINES_AR = {
 }
 
 ROUTES = [
-    {'from': 'IST', 'to': 'BGW', 'name': 'Istanbul - Baghdad'},
+    {'from': 'IST', 'to': 'BGW', 'name': 'Istanbul - Baghdad', 'also': [('SAW', 'BGW')]},
     {'from': 'IST', 'to': 'EBL', 'name': 'Istanbul - Erbil'},
     {'from': 'IST', 'to': 'BSR', 'name': 'Istanbul - Basra'},
     {'from': 'IST', 'to': 'NJF', 'name': 'Istanbul - Najaf'},
@@ -253,10 +268,18 @@ def extract_flights(results, route_name, date_str):
 
             duration = (journey.get('duration') or {}).get('text', '')
 
-            price_usd = float(item.get('usd') or item.get('netprice') or 0)
-            if price_usd <= 0:
+            base_price = float(item.get('usd') or item.get('netprice') or 0)
+            if base_price <= 0:
                 continue
-            price_usd = round(price_usd * (1 + COMMISSION), 2)
+            # التسعير حسب الخط:
+            if airline == 'الخطوط الجوية العراقية' and (from_code, to_code) in IRAQI_FIXED_PRICE:
+                price_usd = float(IRAQI_FIXED_PRICE[(from_code, to_code)])   # سعر ثابت للذهاب تركيا→العراق
+            elif airline == 'طيران اور':
+                price_usd = round(base_price, 2)                            # بدون عمولة
+            elif airline == 'طيران البصرة':
+                price_usd = round(base_price * 1.03, 2)                     # عمولة 3%
+            else:
+                price_usd = round(base_price * (1 + COMMISSION), 2)         # الافتراضي 8%
 
             # الأمتعة
             bag_info  = seg.get('baggage') or {}
@@ -382,18 +405,21 @@ def _run():
     def search_route(args):
         ri, route = args
         name = route['name']
+        # مطارات المصدر: الأساسي + أي مطارات إضافية (مثل صبيحة SAW لبغداد)
+        pairs = [(route['from'], route['to'])] + route.get('also', [])
         raw_flights = []
         for di, date in enumerate(dates, 1):
-            results, err = b2b_search(route['from'], route['to'], date)
-            got = extract_flights(results, name, date) if not err else []
-            # شبكة أمان: يوم يرجع صفر (فراغ مؤقت) أو خطأ تجاوز حد (429) → أعد المحاولة
-            if (not got and not err) or (err and '429' in str(err)):
-                time.sleep(30 if err else 1.5)   # تجاوز الحد يحتاج انتظار أطول
-                results, err = b2b_search(route['from'], route['to'], date)
+            for frm, to in pairs:
+                results, err = b2b_search(frm, to, date)
                 got = extract_flights(results, name, date) if not err else []
-            if err:
-                print(f'  ⚠️ {name} {date}: {err}')
-            raw_flights.extend(got)
+                # شبكة أمان: يوم يرجع صفر (فراغ مؤقت) أو خطأ تجاوز حد (429) → أعد المحاولة
+                if (not got and not err) or (err and '429' in str(err)):
+                    time.sleep(30 if err else 1.5)   # تجاوز الحد يحتاج انتظار أطول
+                    results, err = b2b_search(frm, to, date)
+                    got = extract_flights(results, name, date) if not err else []
+                if err:
+                    print(f'  ⚠️ {name} ({frm}→{to}) {date}: {err}')
+                raw_flights.extend(got)
         flights = dedup_flights(raw_flights)
         now_t = datetime.now().strftime('%H:%M')
         send_telegram(f'✅ {name} — {len(flights)} رحلة [{ri}/{len(ROUTES)}] {now_t}')
