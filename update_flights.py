@@ -12,15 +12,15 @@ if os.path.exists(_env_path):
             _k, _v = _line.split('=', 1)
             os.environ.setdefault(_k.strip(), _v.strip())
 
-GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
+GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
 GITHUB_REPO  = "khalidusa/somados"
 GITHUB_FILE  = "data/flights.json"
-TG_TOKEN     = os.environ.get('TG_TOKEN', '8856103719:AAGiK2kxxR-7j0nYyBpSJrtmbsFV6_RjwJs')
-TG_CHAT      = os.environ.get('TG_CHAT',  '725243049')
+TG_TOKEN     = os.environ['TG_TOKEN']
+TG_CHAT      = os.environ['TG_CHAT']
 
 B2B_BASE     = "https://admin.b2bcheetah.com"
-B2B_EMAIL    = os.environ.get('B2B_EMAIL', 'bluemoontravell21@gmail.com')
-B2B_PASSWORD = os.environ.get('B2B_PASSWORD', 'B123456@B')
+B2B_EMAIL    = os.environ['B2B_EMAIL']
+B2B_PASSWORD = os.environ['B2B_PASSWORD']
 USER_AGENT   = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 COMMISSION   = 0.08
 

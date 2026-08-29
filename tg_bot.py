@@ -1,9 +1,17 @@
 import requests, subprocess, os, time, sys, threading
 from datetime import datetime
 
-TOKEN    = "8856103719:AAGiK2kxxR-7j0nYyBpSJrtmbsFV6_RjwJs"
-CHAT_ID  = "725243049"
-WORK_DIR = os.path.expanduser("~/somados")
+_env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+if os.path.exists(_env_path):
+    for _line in open(_env_path):
+        _line = _line.strip()
+        if _line and not _line.startswith('#') and '=' in _line:
+            _k, _v = _line.split('=', 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
+TOKEN    = os.environ['TG_TOKEN']
+CHAT_ID  = os.environ['TG_CHAT']
+WORK_DIR = os.path.dirname(os.path.abspath(__file__))
 INTERVAL = 3 * 60 * 60   # 3 ساعات
 
 _last_auto = {'ts': None}
