@@ -19,8 +19,10 @@ TG_TOKEN     = os.environ['TG_TOKEN']
 TG_CHAT      = os.environ['TG_CHAT']
 
 B2B_BASE     = "https://admin.b2bcheetah.com"
-B2B_EMAIL    = os.environ['B2B_EMAIL']
-B2B_PASSWORD = os.environ['B2B_PASSWORD']
+# البحث العام (guest) — نفس المسار الذي يستعمله موقع b2bcheetah.com للزوار:
+# بدون تسجيل دخول وبدون كوكيز. (المسار القديم /api/search-progressive يحتاج Bearer token)
+SEARCH_PATH  = "/api/search-progressiveguest"
+POLL_PATH    = "/api/flights/search/progressguest/{job_id}"
 USER_AGENT   = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 COMMISSION   = 0.08
 
@@ -93,38 +95,6 @@ ROUTES = [
 ]
 
 
-def b2b_login():
-    r = requests.post(f"{B2B_BASE}/v2/login",
-        json={"email": B2B_EMAIL, "password": B2B_PASSWORD},
-        headers={"Content-Type": "application/json", "Accept": "application/json",
-                 "User-Agent": USER_AGENT}, timeout=15)
-    token = r.json().get('token')
-    if not token:
-        print(f"❌ فشل تسجيل الدخول")
-        sys.exit(1)
-    print(f"✅ تسجيل دخول b2bcheetah (وكيل)")
-    return token
-
-
-# ─── مدير Token مشترك بين الـ workers (يعيد تسجيل الدخول عند انتهاء الصلاحية) ───
-_token_lock = threading.Lock()
-_token_box  = {'val': None}
-
-def get_token():
-    if _token_box['val'] is None:
-        with _token_lock:
-            if _token_box['val'] is None:
-                _token_box['val'] = b2b_login()
-    return _token_box['val']
-
-def refresh_token(old):
-    """يعيد تسجيل الدخول مرة واحدة فقط حتى لو ناداها أكثر من worker بنفس الوقت"""
-    with _token_lock:
-        if _token_box['val'] == old or _token_box['val'] is None:
-            _token_box['val'] = b2b_login()
-    return _token_box['val']
-
-
 # ─── منظّم معدّل الطلبات العام (يمنع تجاوز حد السيرفر ~60 طلب/دقيقة لكل حساب) ───
 # كل طلبات الـ workers تمر من هنا: فاصل ≥1.1 ثانية بين أي طلبين = ~55 طلب/دقيقة (تحت الحد)
 _rate_lock = threading.Lock()
@@ -140,35 +110,34 @@ def _throttle():
 
 
 def _start_search(dep, arr, date_str):
-    """يبدأ البحث ويرجع (poll_url, error). يعالج 401 (تجديد token) و429 (تجاوز الحد)."""
+    """يبدأ البحث ويرجع (poll_url, hdrs, error). بحث عام بلا تسجيل دخول — يعالج 429 (تجاوز الحد)."""
+    hdrs = {"Content-Type": "application/json", "Accept": "application/json",
+            "Origin": "https://b2bcheetah.com", "Referer": "https://b2bcheetah.com/",
+            "User-Agent": USER_AGENT}
     for attempt in range(5):
-        token = get_token()
-        hdrs = {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                "Accept": "application/json", "Origin": "https://b2bcheetah.com", "User-Agent": USER_AGENT}
         try:
             _throttle()
-            r = requests.post(f"{B2B_BASE}/api/search-progressive",
+            r = requests.post(f"{B2B_BASE}{SEARCH_PATH}",
                 json={"from_flight": dep, "to_flight": arr, "date_flight": date_str,
                       "cabin": "economy", "adult": 1, "child": 0, "infant": 0},
                 headers=hdrs, timeout=30)
-            if r.status_code in (401, 403):
-                refresh_token(token)          # انتهت صلاحية الـ token → جدّده وأعد المحاولة
-                continue
             if r.status_code == 429:          # تجاوز حد الطلبات → انتظر ثم أعد المحاولة
                 retry_after = int(r.headers.get('Retry-After', 0)) or 30
                 time.sleep(min(retry_after, 60))
                 continue
             if r.status_code != 200:
                 return None, hdrs, f"HTTP {r.status_code}"
-            poll_url = r.json().get('poll_url')
-            if poll_url:
-                return poll_url, hdrs, None
-            time.sleep(2)                     # لا يوجد poll_url → مهلة قصيرة وأعد المحاولة
+            data = r.json()
+            # الـ API يرجّع poll_url للمسار المحمي — نحن نبني مسار الزائر من job_id
+            job_id = data.get('job_id') or data.get('trace_id')
+            if job_id:
+                return f"{B2B_BASE}{POLL_PATH.format(job_id=job_id)}", hdrs, None
+            time.sleep(2)                     # لا يوجد job_id → مهلة قصيرة وأعد المحاولة
         except Exception as e:
             time.sleep(2)
             if attempt >= 4:
                 return None, hdrs, str(e)
-    return None, hdrs, "429/no poll_url"
+    return None, hdrs, "429/no job_id"
 
 
 def b2b_search(dep, arr, date_str):
@@ -393,7 +362,6 @@ def _run():
     print(f'  Somados Updater (b2bcheetah) — {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
     print('=' * 70)
 
-    get_token()   # سجّل الدخول مرة واحدة (مشترك بين الـ workers)
     start = datetime.now() + timedelta(days=1)
     dates = [(start + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(15)]
     print(f'\n📅 {dates[0]} → {dates[-1]} | 🛫 {len(ROUTES)} مسار\n')
