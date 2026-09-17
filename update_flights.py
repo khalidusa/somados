@@ -50,6 +50,13 @@ AIRPORTS_AR = {
     'GZT': 'غازي عنتاب', 'KYA': 'قونية', 'VAN': 'وان', 'ERZ': 'أرضروم',
 }
 
+# مطارات المدينة الواحدة — إسطنبول لها مطاران، فنعدّهما نفس الوجهة
+SAME_CITY = {'SAW': 'IST'}
+
+def _city(code):
+    return SAME_CITY.get(code, code)
+
+
 AIRLINES_AR = {
     'AJet': 'أناضول جت',        'ajet': 'أناضول جت',
     'Ajet': 'أناضول جت',        'AJET': 'أناضول جت',       'VF': 'أناضول جت',
@@ -186,7 +193,7 @@ def _normalize_time(t):
     return hm
 
 
-def extract_flights(results, route_name, date_str):
+def extract_flights(results, route_name, date_str, want=None):
     flights = []
     for item in results:
         try:
@@ -233,6 +240,10 @@ def extract_flights(results, route_name, date_str):
             to_code   = ((journey.get('arrival')   or {}).get('airport') or {}).get('code', '')
             from_name = AIRPORTS_AR.get(from_code, from_code)
             to_name   = AIRPORTS_AR.get(to_code,   to_code)
+
+            # المصدر أحياناً يرجّع رحلات لوجهة غير المطلوبة (مثلاً IST→IKA ضمن بحث IST→BGW)
+            if want and (_city(from_code) != _city(want[0]) or _city(to_code) != _city(want[1])):
+                continue
 
             duration = (journey.get('duration') or {}).get('text', '')
 
@@ -379,12 +390,12 @@ def _run():
         for di, date in enumerate(dates, 1):
             for frm, to in pairs:
                 results, err = b2b_search(frm, to, date)
-                got = extract_flights(results, name, date) if not err else []
+                got = extract_flights(results, name, date, (frm, to)) if not err else []
                 # شبكة أمان: يوم يرجع صفر (فراغ مؤقت) أو خطأ تجاوز حد (429) → أعد المحاولة
                 if (not got and not err) or (err and '429' in str(err)):
                     time.sleep(30 if err else 1.5)   # تجاوز الحد يحتاج انتظار أطول
                     results, err = b2b_search(frm, to, date)
-                    got = extract_flights(results, name, date) if not err else []
+                    got = extract_flights(results, name, date, (frm, to)) if not err else []
                 if err:
                     print(f'  ⚠️ {name} ({frm}→{to}) {date}: {err}')
                 raw_flights.extend(got)
